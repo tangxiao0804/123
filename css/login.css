@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora");
 
-body {
-    background: #cbc0d3;
-}
 
 .container {
     margin: auto;
@@ -221,4 +218,13 @@ input[type=checkbox] {
 .checkbox input[type=checkbox]:checked+label {
     color: #ce7d88;
     transition: 0.5s all ease;
+}
+
+body [type=button],
+body [type=reset],
+body [type=submit],
+body button {
+    -webkit-appearance: initial;
+    /* 或者 unset、revert */
+    appearance: initial;
 }

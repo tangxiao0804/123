@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 40%;
+    float: left;
+}
+
+main {
+    width: 55%;
+    float: left;
+}
+
+.accordion-button {
+    font-size: 25px;
+    width: 300px;
+    float: left;
+}
+
+table {
+    align-items: flex-start;
+}
+
+
+table a {
+    font-size: 30px;
+    text-align: center
+}
+
+.accordion {
+    width: 50%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.list-item {
+    display: none;
+}
+
+.list-item.active {
+    display: flex;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.special-effect {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.col {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+
+.page-item {
+    position: relative;
+    bottom: -220px;
+}
+
+.accordion-item {
+    width: 300px;
+}
+
+.accordion-body {
+    width: 300px;
+}
