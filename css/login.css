@@ -25,7 +25,7 @@
     height: 500px;
     border-radius: 5px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;;
     z-index: 2;
 }
 
@@ -165,9 +165,9 @@ form {
 }
 
 input {
-    background: #eac7cc;
+    background: #FAEED1;
     width: 65%;
-    color: #ce7d88;
+    color: #cbb89f;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;
@@ -195,7 +195,7 @@ input:focus::placeholder {
 
 label {
     font-family: "Open Sans", sans-serif;
-    color: #ce7d88;
+    color: #988946;
     font-size: 0.8em;
     letter-spacing: 1px;
 }

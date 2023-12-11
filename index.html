@@ -30,7 +30,7 @@
             <div class="itemlist">
                 <div class="dropdown">
                     <div class="dropbtn">
-                        <a href="html/item.html">初栖選品</a>
+                        <a href="/html/product.html">初栖選品</a>
                     </div>
                     <div class="dropdown-content">
                         <a href="#">鮮花</a>
@@ -39,9 +39,9 @@
                     </div>
                 </div>
             </div>
-            <a href="html/flower.html">鮮花故事</a>
-            <a href="html/item.html">關於我們</a>
-            <a href="html/member.html">會員中心</a>
+            <a href="/html/flower.html">鮮花故事</a>
+            <a href="/html/item.html">關於我們</a>
+            <a href="/html/member.html">會員中心</a>
         </nav>
         <div class="head3">
             <div class="flexbox">
@@ -57,7 +57,7 @@
                 </a>
             </div>
             <div class="shoppingicon">
-                <a href="html/login.html">
+                <a href="/html/shoppingcart.html">
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
@@ -109,25 +109,16 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById("signup").addEventListener("click", function () {
-            document.querySelector(".pinkbox").style.transform = "translateX(80%)";
-            document.querySelector(".signin").classList.add("nodisplay");
-            document.querySelector(".signup").classList.remove("nodisplay");
-        });
-
-        document.getElementById("signin").addEventListener("click", function () {
-            document.querySelector(".pinkbox").style.transform = "translateX(0%)";
-            document.querySelector(".signup").classList.add("nodisplay");
-            document.querySelector(".signin").classList.remove("nodisplay");
-        });
-    </script>
-    </div>
+    <script src="/js/login.js"></script>
 
     <main>
+        <div>
+            <div class="head">
+                熱銷商品
+            </div>
 
+        </div>
     </main>
-
 
     <footer>
         <div class="footerlogo">
