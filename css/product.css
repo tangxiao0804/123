@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside{
+    width: 40%;
+    float: left;    
+}
+
+main{
+    width: 55%;
+    float: left;
+}
+
+.accordion-button{
+    font-size: 25px;
+}
+
+table{
+    margin: auto;
+}
+
+table a{
+    font-size: 50px;
+    text-align: center
+}
+
+.accordion{
+    width: 50%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.list-item {
+    display: none;
+}
+.list-item.active {
+    display: flex;
+}
+
+td, th {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px; 
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.special-effect{
+    background-color: #0D6EFD;
+    color: white;
+}
