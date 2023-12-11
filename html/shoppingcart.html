@@ -114,130 +114,75 @@
 </div>
   <script src="../js/login.js"></script>
   <main>
-    <div class="wrap cf">
-      <div class="heading cf">
-        <h1>購物清單</h1>
-        <a href="#" class="continue">繼續選購</a>
-      </div>
-      <div class="cart">
-    <!--    <ul class="tableHead">
-          <li class="prodHeader">Product</li>
-          <li>Quantity</li>
-          <li>Total</li>
-           <li>Remove</li>
-        </ul>-->
-        <ul class="cartWrap">
-          <li class="items odd">
-            
-        <div class="infoWrap"> 
-            <div class="cartSection">
-            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-              <h3>Item Name 1</h3>
-            
-               <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-            
-              <p class="stockStatus"> In Stock</p>
-            </div>  
-        
-            
-            <div class="prodTotal cartSection">
-              <p>$15.00</p>
-            </div>
-                  <div class="cartSection removeWrap">
-               <a href="#" class="remove">x</a>
-            </div>
-          </div>
-          </li>
-          <li class="items even">
-            
-           <div class="infoWrap"> 
-            <div class="cartSection">
-             
-            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-              <h3>Item Name 1</h3>
-            
-               <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-            
-              <p class="stockStatus"> In Stock</p>
-            </div>  
-        
-            
-            <div class="prodTotal cartSection">
-              <p>$15.00</p>
-            </div>
-                  <div class="cartSection removeWrap">
-               <a href="#" class="remove">x</a>
-            </div>
-          </div>
-          </li>
-          
-                <li class="items odd">
-                 <div class="infoWrap"> 
-            <div class="cartSection">
-                
-            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-              <h3>Item Name 1</h3>
-            
-               <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-            
-              <p class="stockStatus out"> Out of Stock</p>
-            </div>  
-        
-            
-            <div class="prodTotal cartSection">
-              <p>$15.00</p>
-            </div>
-                        <div class="cartSection removeWrap">
-               <a href="#" class="remove">x</a>
-            </div>
-                  </div>
-          </li>
-          <li class="items even">
-           <div class="infoWrap"> 
-            <div class="cartSection info">
-                 
-            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-              <p class="itemNumber">#QUE-007544-002</p>
-              <h3>Item Name 1</h3>
-            
-              <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-            
-              <p class="stockStatus"> In Stock</p>
-              
-            </div>  
-        
-            
-            <div class="prodTotal cartSection">
-              <p>$15.00</p>
-            </div>
-        
-                <div class="cartSection removeWrap">
-               <a href="#" class="remove">x</a>
-            </div>
-             </div>
-             <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
-          </li>
-          
-          
-          <!--<li class="items even">Item 2</li>-->
-     
-        </ul>
-      </div>
-      
-      <div class="promoCode"><label for="promo">使用折扣碼</label>
-        <input type="text" name="promo" class="pro" placholder="Enter Code"/>
-      <a href="#" class="btn"></a></div>
-      
-      <div class="subtotal cf">
-        <ul>
-          <li class="totalRow"><span class="label">小計</span><span class="value">$35 元</span></li>
-          
-              <li class="totalRow"><span class="label">運費</span><span class="value">$60 元</span></li>
-          
-                <li class="totalRow final"><span class="label">總金額</span><span class="value">$1080 元</span></li>
-          <li class="totalRow"><a href="#" class="btn continue">結帳</a></li>
-        </ul>
-      </div>
+    <div id="app">
+
+      <!-- Header -->
+      <header class="container">
+        <h1>Shopping Cart</h1>
+        <span class="count">{{ itemCount }} items in the bag</span>
+      </header>
+      <!-- End Header -->
+    
+      <!-- Product List -->
+      <section class="container">
+        <div v-if="products.length > 0">
+          <ul class="products">
+            <li class="row" v-for="(product, index) in products">
+              <div class="col left">
+                <div class="thumbnail">
+                  <a href="#">
+                    <img :src="product.image" :alt="product.name" />
+                  </a>
+                </div>
+                <div class="detail">
+                  <div class="name"><a href="#">{{ product.name }}</a></div>
+                  <div class="description">{{ product.description }}</div>
+                  <div class="price">{{ product.price | currencyFormatted }}</div>
+                </div>
+              </div>
+    
+              <div class="col right">
+                <div class="quantity">
+                  <input type="number" class="quantity" step="1" :value="product.quantity" @input="updateQuantity(index, $event)" @blur="checkQuantity(index, $event)" />
+                </div>
+    
+                <div class="remove">
+                  <svg @click="removeItem(index)" version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                    <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div v-else class="empty-product">
+          <h3>There are no products in your cart.</h3>
+          <button>Shopping now</button>
+        </div>
+      </section>
+      <!-- End Product List -->
+    
+      <!-- Summary -->
+      <section class="container" v-if="products.length > 0">
+        <div class="promotion">
+          <label for="promo-code">Have A Promo Code?</label>
+          <input type="text" id="promo-code" v-model="promoCode" /> <button type="button" @click="checkPromoCode"></button>
+        </div>
+    
+        <div class="summary">
+          <ul>
+            <li>Subtotal <span>{{ subTotal | currencyFormatted }}</span></li>
+            <li v-if="discount > 0">Discount <span>{{ discountPrice | currencyFormatted }}</span></li>
+            <li>Tax <span>{{ tax | currencyFormatted }}</span></li>
+            <li class="total">Total <span>{{ totalPrice | currencyFormatted }}</span></li>
+          </ul>
+        </div>
+    
+        <div class="checkout">
+          <button type="button">Check Out</button>
+        </div>
+      </section>
+      <!-- End Summary -->
     </div>
     <script src="../js/shopping.js"></script>
   </main>
