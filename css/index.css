@@ -8,6 +8,14 @@ html {
     height: 100%;
 }
 
+#bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
 header {
     position: fixed;
     background-color: #FDF7E4;
@@ -22,8 +30,8 @@ header a {
     color: #522c01;
     text-decoration: none;
     align-items: center;
-    justify-content: center;
     padding: 20px;
+    font-family: "Droid Serif", serif;
 }
 
 
@@ -182,8 +190,8 @@ nav {
 }
 
 .icon1 {
-    width: 58px;
-    height: 58px;
+    width: 59px;
+    height: 59px;
 }
 
 body {
@@ -191,12 +199,15 @@ body {
     height: 100%;
 }
 
+main {
+    display: block;
+}
+
 footer {
-    position: absolute;
-    bottom: 0;
     display: block;
     color: #988946;
     background-color: #FDF7E4;
+    font-family: "Droid Serif", serif;
     text-align: center;
     height: auto;
     line-height: .3;
@@ -212,6 +223,11 @@ h3 {
     color: var(--bs-heading-color);
 
 }
+
+.modal {
+    --bs-modal-width: none;
+}
+
 
 .name {
     font-size: 23px;

@@ -12,7 +12,6 @@
     background: #f6f6f6;
     width: 650px;
     height: 415px;
-    position: absolute;
     top: 25%;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -20,7 +19,7 @@
 
 .pinkbox {
     position: absolute;
-    top: -10%;
+    top: -40px;
     left: 5%;
     background: #eac7cc;
     width: 320px;
@@ -167,9 +166,9 @@ form {
 }
 
 input {
-    background: #eac7cc;
+    background: #FAEED1;
     width: 65%;
-    color: #ce7d88;
+    color: #cbb89f;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;
@@ -197,7 +196,7 @@ input:focus::placeholder {
 
 label {
     font-family: "Open Sans", sans-serif;
-    color: #ce7d88;
+    color: #988946;
     font-size: 0.8em;
     letter-spacing: 1px;
 }

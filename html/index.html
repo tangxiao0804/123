@@ -12,6 +12,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous">
     </script>
     <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+    <script src="../js/login.js"></script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -56,78 +57,65 @@
                 </a>
             </div>
             <div class="shoppingicon">
-                <a href="login.html">
+                <a href="shoppingcart.html">
                     <img src="../img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
 
         </div>
     </header>
-
     <div class="container modal fade" id="loginModal">
-        <div class="welcome modal-dialog">
-            <div class="modal-content">
-                <div class="pinkbox">
-                    <div class="signup nodisplay">
-                        <h1>註冊</h1>
-                        <form autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="email" placeholder="電子郵件">
-                            <input type="password" placeholder="密碼">
-                            <input type="password" placeholder="確認密碼">
-                            <button class="button submit">創建帳戶 </button>
-                        </form>
+        <div id="bg" style="display: block;">
+            <div class="welcome modal-dialog">
+                <div class="modal-content">
+                    <div class="pinkbox">
+                        <div class="signup nodisplay">
+                            <h1>註冊</h1>
+                            <form autocomplete="off">
+                                <input type="text" placeholder="用戶名稱">
+                                <input type="email" placeholder="電子郵件">
+                                <input type="password" placeholder="密碼">
+                                <input type="password" placeholder="確認密碼">
+                                <button class="button submit">創建帳戶 </button>
+                            </form>
+                        </div>
+                        <div class="signin">
+                            <h1>登入</h1>
+                            <form class="more-padding" autocomplete="off">
+                                <input type="text" placeholder="用戶名稱">
+                                <input type="password" placeholder="密碼">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="remember" /><label for="remember">記住我</label>
+                                </div>
+                                <button class="button submit">登入</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="signin">
-                        <h1>登入</h1>
-                        <form class="more-padding" autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="password" placeholder="密碼">
-                            <div class="checkbox">
-                                <input type="checkbox" id="remember" /><label for="remember">記住我</label>
-                            </div>
-                            <button class="button submit">登入</button>
-                        </form>
+                        </div>
+                        <div class="leftbox">
+                            <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+                            <p class="desc">pick your perfect <span>bouquet</span></p>
+                            <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
+                                alt="1357d638624297b" border="0">
+                            <p class="account">已經有帳號了嗎?</p>
+                            <button class="button" id="signin">登入</button>
+                        </div>
+                        <div class="rightbox">
+                            <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+                            <p class="desc"> pick your perfect <span>bouquet</span></p>
+                            <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
+                            <p class="account">還沒有帳號嗎?</p>
+                            <button class="button" id="signup">註冊</button>
+                        </div>
                     </div>
-                </div>
-                <div class="leftbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc">pick your perfect <span>bouquet</span></p>
-                    <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
-                        alt="1357d638624297b" border="0">
-                    <p class="account">已經有帳號了嗎?</p>
-                    <button class="button" id="signin">登入</button>
-                </div>
-                <div class="rightbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc"> pick your perfect <span>bouquet</span></p>
-                    <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
-                    <p class="account">還沒有帳號嗎?</p>
-                    <button class="button" id="signup">註冊</button>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById("signup").addEventListener("click", function () {
-            document.querySelector(".pinkbox").style.transform = "translateX(80%)";
-            document.querySelector(".signin").classList.add("nodisplay");
-            document.querySelector(".signup").classList.remove("nodisplay");
-        });
-
-        document.getElementById("signin").addEventListener("click", function () {
-            document.querySelector(".pinkbox").style.transform = "translateX(0%)";
-            document.querySelector(".signup").classList.add("nodisplay");
-            document.querySelector(".signin").classList.remove("nodisplay");
-        });
-    </script>
-    </div>
-
+    
     <main>
 
     </main>
-
-
     <footer>
         <div class="footerlogo">
             <img src="../img/logo/logo.png" style="width: 150px;">
