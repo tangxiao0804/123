@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    position: relative;
+    top: 200px;
+    width: 35%;
+    float: left;
+}
+
+.item {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 200px;
+}
+
+.accordion-button {
+    float: left;
+}
+
+nav>.page {
+    position: relative;
+    top: -40px;
+}
+
+table {
+    align-items: flex-start;
+}
+
+
+table a {
+    font-size: 30px;
+    text-align: center
+}
+
+.accordion {
+    width: 50%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.list-item {
+    display: none;
+}
+
+.list-item.active {
+    display: flex;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.special-effect {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.col {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+
+.page-item {
+    position: relative;
+    bottom: -100px;
+}
+
+.accordion-item {
+    width: 300px;
+}
+
+.accordion-body {
+    width: 300px;
+}
