@@ -34,12 +34,10 @@ header a {
     font-family: "Droid Serif", serif;
 }
 
-
 .logohead {
     display: flex;
     margin-left: 100px;
     width: 160px;
-
 }
 
 .logopic {
@@ -318,7 +316,6 @@ a {
 }
 
 body {
-
     height: 100%;
 }
 

@@ -9,4 +9,3 @@ document.getElementById("signin").addEventListener("click", function () {
     document.querySelector(".signup").classList.add("nodisplay");
     document.querySelector(".signin").classList.remove("nodisplay");
 });
-  
