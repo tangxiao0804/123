@@ -16,7 +16,14 @@ html {
     width: 100%;
 }
 
+body {
+    height: 100%;
+
+}
+
+/*選單*/
 header {
+    z-index: 2147483647;
     position: fixed;
     background-color: #e6ded3;
     width: 100%;
@@ -192,12 +199,13 @@ nav {
     height: 59px;
 }
 
+/*Banner*/
 .banner {
     display: flex;
 }
 
 .bannerimg {
-    background-image: url(../flower/banner.jpg);
+    background-image: url(../img/flower/banner.jpg);
     width: 50%;
     height: 680px;
     object-fit: cover;
@@ -315,12 +323,152 @@ a {
     transition-delay: 0.6s;
 }
 
-body {
-    height: 100%;
-}
+
 
 main {
     display: block;
+}
+
+/*所有商品*/
+.allitem {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 600px 450px;
+    grid-template-rows: 250px 250px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "sellitem1 sellitem2"
+        "sellitem1 sellitem3";
+
+}
+
+.sellitem1 {
+    grid-area: sellitem1;
+}
+
+.sellitem2 {
+    grid-area: sellitem2;
+}
+
+.sellitem3 {
+    grid-area: sellitem3;
+
+}
+
+.sellitem1>img,
+.sellitem2>img,
+.sellitem3>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sname1,
+.sname2,
+.sname3 {
+    height: 0px;
+}
+
+.sname1>a {
+    font-size: 50px;
+    position: relative;
+    top: -80px;
+    color: white !important;
+}
+
+.sname2>a {
+    font-size: 40px;
+    position: relative;
+    top: -320px;
+    color: white !important;
+}
+
+.sname3>a {
+    font-size: 40px;
+    position: relative;
+    top: -70px;
+    color: white !important;
+}
+
+/*廣告*/
+.slide {
+    background-color: #dccabb7e;
+}
+
+.carousel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: contain;
+    height: 670px;
+}
+
+/*熱銷*/
+.bestseller {
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+.head {
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    border-radius: 50px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.bsitem {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bsitem1 {
+    padding-left: 150px;
+
+}
+
+.bsitem2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bsitem3 {
+    padding-right: 150px;
+}
+
+
+.bsimg {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+}
+
+.bsimg>img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bsdetail {
+    font-size: 35px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    text-align: center;
 }
 
 footer {
