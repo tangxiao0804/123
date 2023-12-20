@@ -12,7 +12,7 @@ html {
 }
 
 .bannerimg {
-    background-image: url(../flower/banner.jpg);
+    background-image: url(../img/flower/banner.jpg);
     width: 50%;
     height: 680px;
     object-fit: cover;
