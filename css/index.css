@@ -201,6 +201,67 @@ main {
     color: white !important;
 }
 
+/*廣告*/
+.slide {
+    background-color: #dccabb7e;
+}
+.carousel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-inner .carousel-item img {
+    object-fit: contain;
+    height: 670px;
+}
+/*熱銷*/
+.bestseller {
+    background-color: rgba(255, 255, 255, 0.568);
+}
+.head {
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    border-radius: 50px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bsitem {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bsitem1 {
+    padding-left: 150px;
+}
+.bsitem2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bsitem3 {
+    padding-right: 150px;
+}
+.bsimg {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+}
+.bsimg>img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.bsdetail {
+    font-size: 35px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    text-align: center;
+}
+
 
 footer {
     display: block;
