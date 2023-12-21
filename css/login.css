@@ -18,14 +18,15 @@
 
 .pinkbox {
     position: absolute;
-    top: -10%;
+    top: -40px;
     left: 5%;
     background: #eac7cc;
     width: 320px;
     height: 500px;
     border-radius: 5px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease-in-out;;
+    transition: all 0.5s ease-in-out;
+    ;
     z-index: 2;
 }
 

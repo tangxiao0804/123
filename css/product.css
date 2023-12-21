@@ -5,19 +5,26 @@
 }
 
 aside {
-    width: 40%;
+    position: relative;
+    top: 200px;
+    width: 35%;
     float: left;
 }
 
-main {
-    width: 55%;
+.item {
+    width: 50%;
     float: left;
+    position: relative;
+    top: 200px;
 }
 
 .accordion-button {
-    font-size: 25px;
-    width: 300px;
     float: left;
+}
+
+nav>.page {
+    position: relative;
+    top: -40px;
 }
 
 table {
@@ -72,7 +79,7 @@ a {
 
 .page-item {
     position: relative;
-    bottom: -220px;
+    bottom: -100px;
 }
 
 .accordion-item {
@@ -81,4 +88,15 @@ a {
 
 .accordion-body {
     width: 300px;
+}
+
+footer{
+    display: block;
+    color: #988946;
+    background-color: #e6ded3;
+    font-family: "Droid Serif", serif;
+    text-align: center;
+    line-height: .3;
+    height: 200px;
+    width: 100%;
 }
