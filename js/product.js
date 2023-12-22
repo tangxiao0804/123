@@ -40,3 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// 頁面跳轉
+$(document).ready(function () {
+    $('.accordion-toggle').on('click', function (e) {
+        e.preventDefault();
+        var targetPanel = $(this).data('target');
+        $(targetPanel).collapse('toggle');
+    });
+});
