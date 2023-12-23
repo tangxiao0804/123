@@ -6,7 +6,6 @@ html {
 }
 
 
-
 .banner {
     display: flex;
 }
@@ -136,11 +135,13 @@ body {
 
 main {
     display: block;
+    background-color: #f9ebd2d2;
 }
 
 /*所有商品*/
 .allitem {
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.568);
     display: grid;
     justify-content: center;
     align-content: center;
@@ -203,8 +204,9 @@ main {
 
 /*廣告*/
 .slide {
-    background-color: #dccabb7e;
+    background-color: rgba(220, 202, 187, 0.5);
 }
+
 .carousel {
     width: 100%;
     margin-left: auto;
@@ -214,10 +216,13 @@ main {
     object-fit: contain;
     height: 670px;
 }
+
 /*熱銷*/
 .bestseller {
+    color: #522c01;
     background-color: rgba(255, 255, 255, 0.568);
 }
+
 .head {
     position: relative;
     top: 20px;
@@ -234,16 +239,25 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
 .bsitem1 {
+    display: grid;
     padding-left: 150px;
 }
+
 .bsitem2 {
+    position: relative;
+    left: -15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .bsitem3 {
+    position: relative;
+    left: -15px;
     padding-right: 150px;
 }
+
 .bsimg {
     padding: 20px;
     width: 300px;
@@ -258,10 +272,23 @@ main {
     font-size: 35px;
     position: relative;
     top: -60px;
-    left: 10px;
     text-align: center;
+    display: grid;
 }
 
+.bsname {
+    font-size: 35px;
+    text-align: left;
+    position: relative;
+    left: 15px;
+}
+
+.bsprice {
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+    left: 15px;
+}
 
 footer {
     display: block;
@@ -283,6 +310,10 @@ h3 {
 
 }
 
+.clearfix {
+    clear: both;
+}
+
 .modal {
     --bs-modal-width: none;
 }
@@ -290,8 +321,4 @@ h3 {
 
 .name {
     font-size: 23px;
-}
-
-.clearfix {
-    clear: both;
 }

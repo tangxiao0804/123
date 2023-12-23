@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 
+.pcontainer {
+    display: block;
+    height: 900px;
+}
+
 aside {
     position: relative;
-    top: 200px;
+    top: 300px;
     width: 35%;
     float: left;
+    display: block;
 }
 
 .item {
     width: 50%;
     float: left;
     position: relative;
-    top: 200px;
+    top: 205px;
 }
 
 .accordion-button {
@@ -90,7 +96,7 @@ a {
     width: 300px;
 }
 
-footer{
+footer {
     display: block;
     color: #988946;
     background-color: #e6ded3;
