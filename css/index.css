@@ -212,6 +212,7 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
 .carousel-inner .carousel-item img {
     object-fit: contain;
     height: 670px;
@@ -234,6 +235,7 @@ main {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 .bsitem {
     margin-top: 15px;
     display: flex;
@@ -263,11 +265,13 @@ main {
     width: 300px;
     height: 500px;
 }
+
 .bsimg>img {
     width: 300px;
     height: 400px;
     object-fit: cover;
 }
+
 .bsdetail {
     font-size: 35px;
     position: relative;

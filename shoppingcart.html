@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/shoppingcart.css">
   <link rel="stylesheet" href="css/login.css">
-
 </head>
 
 <body>
@@ -68,31 +67,29 @@
   </header>
 
   <div class="container modal fade" id="loginModal">
-    <div id="bg" style="display: block;">
-      <div class="welcome modal-dialog">
-        <div class="modal-content">
-          <div class="pinkbox">
-            <div class="signup nodisplay">
-              <h1>註冊</h1>
-              <form autocomplete="off">
-                <input type="text" placeholder="用戶名稱">
-                <input type="email" placeholder="電子郵件">
-                <input type="password" placeholder="密碼">
-                <input type="password" placeholder="確認密碼">
-                <button class="button submit">創建帳戶 </button>
-              </form>
-            </div>
-            <div class="signin">
-              <h1>登入</h1>
-              <form class="more-padding" autocomplete="off">
-                <input type="text" placeholder="用戶名稱">
-                <input type="password" placeholder="密碼">
-                <div class="checkbox">
-                  <input type="checkbox" id="remember" /><label for="remember">記住我</label>
-                </div>
-                <button class="button submit">登入</button>
-              </form>
-            </div>
+    <div class="welcome modal-dialog">
+      <div class="modal-content">
+        <div class="pinkbox">
+          <div class="signup nodisplay">
+            <h1>註冊</h1>
+            <form autocomplete="off">
+              <input type="text" placeholder="用戶名稱" name="id">
+              <input type="email" placeholder="電子郵件" name="mail">
+              <input type="password" placeholder="密碼" name="pwd">
+              <input type="password" placeholder="確認密碼" name="confirm">
+              <button class="button submit">創建帳戶 </button>
+            </form>
+          </div>
+          <div class="signin">
+            <h1>登入</h1>
+            <form class="more-padding" autocomplete="off">
+              <input type="text" placeholder="用戶名稱" name="id">
+              <input type="password" placeholder="密碼" name="pwd">
+              <div class="checkbox">
+                <input type="checkbox" id="remember" /><label for="remember">記住我</label>
+              </div>
+              <button class="button submit">登入</button>
+            </form>
           </div>
         </div>
         <div class="leftbox">
