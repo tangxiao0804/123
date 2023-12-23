@@ -122,14 +122,14 @@ button {
 }
 
 button:hover {
-    background: #eac7cc;
-    color: #f6f6f6;
+    background: #e6ded3;
+    color: #af8c6b;
     transition: background-color 1s ease-out;
 }
 
 .button {
     margin-top: 3%;
-    background: #f6f6f6;
+    background: #f6f6f655;
     color: #ce7d88;
     border: solid 1px #eac7cc;
 }
