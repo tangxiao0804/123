@@ -82,19 +82,19 @@
                 <div class="pinkbox">
                     <div class="signup nodisplay">
                         <h1>註冊</h1>
-                        <form autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="email" placeholder="電子郵件">
-                            <input type="password" placeholder="密碼">
-                            <input type="password" placeholder="確認密碼">
+                        <form autocomplete="off" method="get" action="">
+                            <input type="text" placeholder="用戶名稱" name="id">
+                            <input type="email" placeholder="電子郵件" name="mail">
+                            <input type="password" placeholder="密碼" name="pwd">
+                            <input type="password" placeholder="確認密碼" name="confirm">
                             <button class="button submit">創建帳戶 </button>
                         </form>
                     </div>
                     <div class="signin">
                         <h1>登入</h1>
-                        <form class="more-padding" autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="password" placeholder="密碼">
+                        <form class="more-padding" autocomplete="off" method="get" action="">
+                            <input type="text" placeholder="用戶名稱" name="id">
+                            <input type="password" placeholder="密碼" name="pwd">
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
@@ -124,11 +124,8 @@
 
     <div class="clearfix"></div>
 
-    <div class="container">
+    <div class="pcontainer">
         <aside>
-            <div class="font">
-                <h1>選品欄目</h1>
-            </div>
             <div class="center">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -204,42 +201,12 @@
                                 多肉植物
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="">1.十字軍東征</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">新世紀福音戰士</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">2.很爛的工作條件</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">職務no優</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">3.腳有多重</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">腳半磅</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </aside>
         <main class="item">
-            <!-- 產品 3*2 -->
-            <div class="font">
-                <h1>把我媽找來就對了！
-                </h1>
-            </div>
-            <!-- 第一頁商品 -->
+            <!-- 產品 3*2  第一頁商品 -->
             <div class="row row-cols-1 row-cols-3 list-item" id="page1">
                 <div class="col">
                     <div class="card h-100 ">
@@ -430,7 +397,6 @@
             <br>
             copyright © 2023 All Seventh Day
     </footer>
-    <div class="clearfix"></div>
 </body>
 
 </html>

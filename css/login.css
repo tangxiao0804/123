@@ -26,7 +26,6 @@
     border-radius: 5px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease-in-out;
-    ;
     z-index: 2;
 }
 
@@ -122,14 +121,14 @@ button {
 }
 
 button:hover {
-    background: #eac7cc;
-    color: #f6f6f6;
+    background: #e6ded3;
+    color: #af8c6b;
     transition: background-color 1s ease-out;
 }
 
 .button {
     margin-top: 3%;
-    background: #f6f6f6;
+    background: #f6f6f655;
     color: #ce7d88;
     border: solid 1px #eac7cc;
 }
@@ -224,6 +223,5 @@ body [type=reset],
 body [type=submit],
 body button {
     -webkit-appearance: initial;
-    /* 或者 unset、revert */
     appearance: initial;
 }

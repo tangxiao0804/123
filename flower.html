@@ -13,7 +13,9 @@
         </script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/flower.css">
     <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
 </head>
 
@@ -41,7 +43,7 @@
                 </div>
             </div>
             <a href="flower.html">鮮花故事</a>
-            <a href="index.html">關於我們</a>
+            <a href="aboutus.html">關於我們</a>
             <a href="member.html">會員中心</a>
         </nav>
         <div class="head3">
@@ -72,19 +74,19 @@
                 <div class="pinkbox">
                     <div class="signup nodisplay">
                         <h1>註冊</h1>
-                        <form autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="email" placeholder="電子郵件">
-                            <input type="password" placeholder="密碼">
-                            <input type="password" placeholder="確認密碼">
+                        <form autocomplete="off" method="get" action="">
+                            <input type="text" placeholder="用戶名稱" name="id">
+                            <input type="email" placeholder="電子郵件" name="mail">
+                            <input type="password" placeholder="密碼" name="pwd">
+                            <input type="password" placeholder="確認密碼" name="confirm">
                             <button class="button submit">創建帳戶 </button>
                         </form>
                     </div>
                     <div class="signin">
                         <h1>登入</h1>
-                        <form class="more-padding" autocomplete="off">
-                            <input type="text" placeholder="用戶名稱">
-                            <input type="password" placeholder="密碼">
+                        <form class="more-padding" autocomplete="off" method="get" action="">
+                            <input type="text" placeholder="用戶名稱" name="id">
+                            <input type="password" placeholder="密碼" name="pwd">
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
@@ -114,8 +116,128 @@
     </div>
 
     <main>
-
+        <div class="fcontainer">
+            <div class="flowerbanner">
+                <img src="img/flower/banner.jpg">
+                <div class="fname">
+                    <a>薄荷</a>
+                </div>
+            </div>
+            <div class="finfo1">
+                <div class="intro">
+                    <h2>薄荷&nbsp&nbsp&nbsp&nbspMint</h2>
+                    <div class="infotext">
+                        薄荷屬包含了25個種，除少數為一年生植物外，大部份均為具有香味的多年生植物。而其品種多達二千多種。現在市面上薄荷的種類很多，以
+                        綠薄荷、蘇格蘭薄荷、蘋果薄荷、香蕉薄荷等較多,偏愛微濕土壤，全日照、半日照或部份遮蔭的環境皆可。
+                    </div>
+                    <div class="infotext1">
+                        花語:<br>
+                        1.永遠的愛，意旨純潔的愛情。<br>
+                        2.良好的品德、美德，指人品德高尚、謙虛有禮。<br>
+                        3.真誠的友誼，表示待人坦承。<br>
+                        贈送對象:<br>
+                        戀人、朋友(同性、異性)<br>
+                        <!-- 某位夥伴很愛薄荷所以它莫名其妙地在第一個 -->
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="pic1">
+                        <img src="img/flower/F01.jpg">
+                        <img src="img/flower/F01.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="flowerbanner">
+                <img src="img/flower/banner.jpg">
+                <div class="fname">
+                    <a>向日葵</a>
+                </div>
+            </div>
+            <div class="finfo1">
+                <div class="left">
+                    <div class="pic2">
+                        <img src="img/flower/F01.jpg">
+                        <img src="img/flower/F01.jpg">
+                        <img src="img/flower/F01.jpg">
+                        <img src="img/flower/F01.jpg">
+                    </div>
+                </div>
+                <div class="intro2">
+                    <h2>向日葵&nbsp&nbsp&nbsp&nbspSunflower</h2>
+                    <div class="infotext">
+                        向日葵主要是因花序隨太陽轉動的特性，加上「葵」有著「花向四方旋轉綻放」的含義而所命名。英文名為「Sun flower」，就如同太陽的花般，帶給人們充滿元氣的力量，以及活潑明亮形象。
+                    </div>
+                    <div class="infotext1">
+                        花語:<br>
+                        信念、光輝、高傲、忠誠、愛慕、溫暖、陽光，也代表沉默的愛。<br>
+                        1 枝向日葵：花語代表著絕對忠誠、專一。表示你是我的唯一。<br>
+                        5 枝向日葵：代表著偉大美好的愛情。<br>
+                        6 枝向日葵：適合在畢業季節送給畢業生，象徵鵬程萬里，祝福對方順順利利。<br>
+                        7 枝向日葵：象徵著幸運，有著 lucky 7 的數字 7，代表祝福著對方好運連連。<br>
+                        9 枝向日葵：代表長長久久。<br>
+                        11 枝向日葵：有兩個 1，象徵著想跟你一生一世一直在一起。<br>
+                        贈送對象:<br>
+                        戀人、朋友、長輩、同事
+                    </div>
+                </div>
+            </div>
+            <div class="flowerbanner">
+                <img src="img/flower/banner.jpg">
+                <div class="fname">
+                    <a>花名</a>
+                </div>
+            </div>
+            <div class="finfo1">
+                <div class="intro3">
+                    <h2>花花名中&nbsp&nbsp&nbsp&nbsp英</h2>
+                    <div class="infotext">
+                        花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹
+                    </div>
+                </div>
+                <div class="pic3">
+                    <img src="img/flower/F01.jpg">
+                </div>
+                <div class="infotext3">
+                    花語:<br>
+                    123123<br>
+                    贈送對象:<br>
+                    123123
+                </div>
+            </div>
+            <div class="flowerbanner">
+                <img src="img/flower/banner.jpg">
+                <div class="fname">
+                    <a>花名</a>
+                </div>
+            </div>
+            <div class="finfo1">
+                <div class="pic4-1">
+                    <img src="img/flower/F01.jpg">
+                </div>
+                <div class="intro4">
+                    <h2>花花名中&nbsp&nbsp&nbsp&nbsp英</h2>
+                    <div class="infotext">
+                        花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹花花介紹
+                    </div>
+                    <div class="infotext1">
+                        花語:<br>
+                        123123<br>
+                        贈送對象:<br>
+                        123123
+                    </div>
+                </div>
+                <div class="pic4-2">
+                    <img src="img/flower/F01.jpg">
+                </div>
+            </div>
+        </div>
+        <button class="morebtn">
+            查看更多
+        </button>
     </main>
+
+    <div class="clearfix"></div>
+
     <footer>
         <div class="footerlogo">
             <img src="img/logo/logo.png" style="width: 150px;">
@@ -124,7 +246,6 @@
             <br>
             copyright © 2023 All Seventh Day
     </footer>
-    <div class="clearfix"></div>
 </body>
 
 </html>
