@@ -142,7 +142,7 @@ nav a {
 .search>div>input {
     position: relative;
     top: -5px;
-    color: #F4ECCE;
+    color: #5a4d2d;
     font-size: 16px;
     background: transparent;
     width: 32px;
@@ -155,7 +155,7 @@ nav a {
 }
 
 .search>div>input::placeholder {
-    color: #522c01;
+    color: #5a4d2d;
     opacity: 0;
     transition: opacity 150ms ease-out;
 }
