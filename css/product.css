@@ -96,18 +96,11 @@ a {
     width: 300px;
 }
 
-#headingThree button.collapsed::after {
-    content: none;  /* 將箭頭的內容設置為空，即刪除箭頭 */
+.card-img-top {
+    width: 285px;
+    height: 300px;
+    object-fit: cover;
 }
-
-#headingThree button::after {
-    content: "+";  /* 自定義展開的符號 */
-    font-weight: bold; /* 可選：使符號粗體以保持一致性 */
-    margin-left: 5px; /* 可選：添加一些左邊距以調整位置 */
-}
-
-
-
 
 footer {
     display: block;
