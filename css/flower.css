@@ -1,0 +1,241 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: white !important;
+}
+
+.flowerbanner {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    text-align: center;
+
+}
+
+.flowerbanner>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+.fname {
+    position: relative;
+    top: -230px;
+    left: 810px;
+    align-items: center;
+    width: 280px;
+    height: 100px;
+    border-style: solid;
+    border-color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 255, 0.713);
+
+}
+
+.fname>a {
+
+    position: relative;
+    top: 10px;
+    font-size: 50px !important;
+    color: aqua;
+    text-align: center;
+}
+
+
+.finfo1 {
+    width: auto;
+    display: flex;
+    margin: 80px;
+    justify-content: space-between;
+}
+
+
+.intro>h2,
+.intro2>h2,
+.intro4>h2 {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #522c01d4;
+}
+
+/*第一種*/
+.intro {
+    width: 600px;
+    height: 400px;
+    margin-left: 120px;
+}
+
+.infotext {
+    position: relative;
+    top: -10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #522c01;
+}
+
+.infotext1 {
+    position: relative;
+    top: -10px;
+    line-height: 1.6;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #522c018e;
+}
+
+.right {
+    width: 765px;
+    height: 500px;
+    margin-right: 120px;
+    background-color: antiquewhite;
+}
+
+.pic1 {
+    position: relative;
+    top: 40px;
+    left: 35px;
+    display: flex;
+    width: 340px;
+    height: 410px;
+    object-fit: cover;
+    gap: 18px;
+
+}
+
+.pic1>img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+/*第二種*/
+.left {
+    width: 600px;
+    height: 600px;
+    margin-left: 140px;
+
+}
+
+.intro2 {
+    position: relative;
+    top: 35px;
+    width: 600px;
+    height: 400px;
+    margin-right: 280px;
+}
+
+
+
+.pic2 {
+
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.pic2>img {
+    width: 230px;
+    height: 280px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/*第三種*/
+
+.intro3 {
+    position: relative;
+    top: 20px;
+    width: 400px;
+    height: 450px;
+    margin-left: 140px;
+}
+
+.intro3>h2 {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    padding-bottom: 90px;
+    color: #522c01d4;
+}
+
+.pic3 {
+    position: relative;
+    left: -150px;
+    width: 450px;
+    height: 450px;
+}
+
+.pic3>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.infotext3 {
+    position: relative;
+    top: 90px;
+    left: -320px;
+    line-height: 1.6;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #522c018e;
+    margin-right: 140px;
+}
+
+/*第四種*/
+
+.intro4 {
+    position: relative;
+    top: 20px;
+    width: 400px;
+    height: 450px;
+}
+
+.pic4-1,
+.pic4-2 {
+    position: relative;
+    top: 20px;
+    width: 400px;
+    height: 450px;
+
+}
+
+.pic4-1 {
+    margin-left: 140px;
+}
+
+.pic4-2 {
+    margin-right: 140px;
+}
+
+.pic4-1>img,
+.pic4-2>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.morebtn {
+    background-color: white;
+    padding: 0 !important;
+    width: 280px;
+    height: 65px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+}
