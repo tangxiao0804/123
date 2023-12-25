@@ -1,3 +1,4 @@
+console.log('讓我過rrrrrrrrrrrrr');
 document.addEventListener("DOMContentLoaded", function () {
     let currentPage = 1;
     showPage(currentPage);
@@ -13,35 +14,34 @@ document.addEventListener("DOMContentLoaded", function () {
             currentPage = pageNumber;
         }
     }
+    
+    document.querySelectorAll('#collapseOne a, #collapseTwo a').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
 
-    function prevPage() {
-        if (currentPage > 1) {
-            currentPage = currentPage - 1;
-        }
-        showPage(currentPage);
-    }
+            var linkText = this.textContent.trim();
 
-    function nextPage() {
-        const pageCount = document.querySelectorAll('.list-item').length;
-        if (currentPage < pageCount) {
-            currentPage = currentPage + 1;
-        }
-        showPage(currentPage);
-    }
+            var targetPageNumber = 1;
 
-    document.getElementById('prevButton').addEventListener('click', prevPage);
-    document.getElementById('nextButton').addEventListener('click', nextPage);
+            if (linkText === "浪漫首選") {
+                targetPageNumber = 1;
+            }
 
-    document.querySelectorAll('.page-button').forEach(button => {
-        button.addEventListener('click', function () {
-            const pageNumber = parseInt(this.dataset.page);
-            showPage(pageNumber);
+            if (linkText === "歡慶畢業") {
+                targetPageNumber = 2;
+            }
+
+            if (linkText === "聖誕限定") {
+                targetPageNumber = 3;
+            }
+
+            showPage(targetPageNumber);
         });
     });
 
+
 });
 
-// 頁面跳轉
 $(document).ready(function () {
     $('.accordion-toggle').on('click', function (e) {
         e.preventDefault();
