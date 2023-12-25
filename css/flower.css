@@ -95,17 +95,18 @@ main {
     height: 500px;
     margin-right: 120px;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
 }
 
 .pic1 {
     position: relative;
     top: 40px;
-    left: 35px;
     display: flex;
     width: 340px;
     height: 410px;
     object-fit: cover;
-    gap: 18px;
+
 
 }
 
@@ -171,7 +172,7 @@ main {
 
 .pic3 {
     position: relative;
-    left: -150px;
+    left: 50px;
     width: 450px;
     height: 450px;
 }
@@ -186,7 +187,7 @@ main {
 .infotext3 {
     position: relative;
     top: 90px;
-    left: -320px;
+    left: 80px;
     line-height: 1.6;
     padding-left: 15px;
     font-size: 20px;

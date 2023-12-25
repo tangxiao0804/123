@@ -35,12 +35,21 @@ nav>.page {
 
 table {
     align-items: flex-start;
+    border-collapse: collapse;
+    border: none;
+}
+
+tbody {
+    border: none !important;
 }
 
 
 table a {
     font-size: 30px;
-    text-align: center
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+
 }
 
 .accordion {

@@ -25,7 +25,7 @@ main {
 
 .detailinfo {
     position: relative;
-    left: 270PX;
+    left: 300PX;
     display: flex;
     flex-wrap: wrap;
     width: 1400px;

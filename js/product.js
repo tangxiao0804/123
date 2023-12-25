@@ -1,3 +1,4 @@
+console.log('讓我過rrrrrrrrrrrrr');
 document.addEventListener("DOMContentLoaded", function () {
     let currentPage = 1;
     showPage(currentPage);
@@ -39,9 +40,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.querySelectorAll('#collapseOne a, #collapseTwo a').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var linkText = this.textContent.trim();
+
+            var targetPageNumber = 1;
+
+            if (linkText === "浪漫首選") {
+                targetPageNumber = 1;
+            }
+
+            if (linkText === "歡慶畢業") {
+                targetPageNumber = 2;
+            }
+
+            if (linkText === "聖誕限定") {
+                targetPageNumber = 3;
+            }
+
+            showPage(targetPageNumber);
+        });
+    });
+
+
 });
 
-// 頁面跳轉
 $(document).ready(function () {
     $('.accordion-toggle').on('click', function (e) {
         e.preventDefault();
