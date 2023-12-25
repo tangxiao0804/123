@@ -6,7 +6,7 @@
 
 .pcontainer {
     display: block;
-    height: 900px;
+    height: 1300px;
 }
 
 aside {
@@ -97,7 +97,7 @@ a {
 }
 
 .card-img-top {
-    width: 285px;
+
     height: 300px;
     object-fit: cover;
 }
