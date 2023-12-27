@@ -1,14 +1,32 @@
+main {
+    background-color: white !important;
+    width: 100%;
+    height: 100%;
+}
+
+.mcontain {
+    width: 100%;
+    display: flex;
+}
+
+
 .mleft {
     position: relative;
     top: 250px;
-    left: 200px;
+    left: 500px;
     width: 300px;
-    display: grid;
+}
+
+.mright {
+    width: 380px;
+    position: relative;
+    top: 250px;
+    left: 700px;
 }
 
 .mcard {
     width: 420px;
-    background: linear-gradient(90deg, #859398, #283048);
+    background: linear-gradient(151deg, #c1b4a0, #85614d);
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     margin-bottom: 16px;
@@ -16,7 +34,6 @@
 }
 
 .border {
-
     border: 2px solid hsla(0, 0%, 100%, .8);
     border-radius: 10px;
     color: #fff;
@@ -81,12 +98,53 @@
     border-right-color: transparent;
 }
 
-.bill {
+.outline {
     position: relative;
-    border: 10px;
-    border-color: aquamarine;
+    border: 1px solid #dbdbdb;
+    padding: 24px 15px;
+    display: grid;
 }
 
-.form {
-    border: 1px;
+.bill {
+    width: 420px;
+}
+
+.btitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+label {
+    color: #522c01 !important;
+}
+
+a {
+    color: #0471ca;
+    font-size: 15px;
+}
+
+.group {
+    margin-bottom: 24px;
+}
+
+.form-control {
+    width: 338px;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    font-size: 13px;
+    height: 40px;
+    letter-spacing: .5px;
+    line-height: 1;
+    padding: 11px 8px;
+}
+
+.btn {
+    background-color: #522c01;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-bottom: 14.5px;
+    padding-top: 14.5px;
+    width: 100%;
+    border-radius: 0px;
 }
