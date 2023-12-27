@@ -237,12 +237,12 @@ main {
 .bsitem {
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bsitem1 {
     display: grid;
-    padding-left: 150px;
+    padding-left: 160px;
 }
 
 .bsitem2 {

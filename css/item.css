@@ -1,4 +1,4 @@
-.container {  display: grid;
+  .container {  display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 0px 0px;
@@ -69,6 +69,29 @@
   }
   
   .quantity { grid-area: 2 / 1 / 3 / 2; }
+
+  /*數量選擇*/
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+}
   
   .addtocart { grid-area: 2 / 2 / 3 / 4; }
   
@@ -85,4 +108,29 @@
 
 .items{
     margin: auto;
+}
+
+.ptitle{
+  text-align: center;
+
+}
+
+.add_minus{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item_num {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+}
+
+.item_button{
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }

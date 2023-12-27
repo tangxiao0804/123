@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/item.js"></script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
         <div class="Product">
             <div class="ptitle">
                 <div class="bigtitle">
-                    <h3>Product</h3>
+                    <h1>Product</h1>
                 </div>
                 <div class="smalltitle">
                     <!-- 呃 就是分類 -->
@@ -28,7 +30,7 @@
         <div class="box">
             <div class="leftbox">
                 <div class="picture">
-                    <img src="img/flower/C05.jpg" alt="" width="">
+                    <img src="img/flower/C05.jpg" alt="" width="75%">
                     <!-- 哈哈是照片啦 -->
                 </div>
                 <div class="thumbnail">
@@ -43,14 +45,28 @@
                 </div>
                 <div class="star">
                     <!-- 星星在這裡 -->
+                    <div class="star" id="star-rating">
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="1"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
+                            width="40"></iconify-icon>
+                    </div>
                 </div>
                 <div class="price">
                     <!-- 價錢desu -->
                 </div>
                 <div class="buy">
                     <h5>buy</h5><br>
-                    <div class="quantity">
-                        <!-- 選數量用 -->
+                    <div class="add_minus">
+                        <input type="button" value="-" class="item_button" onclick="minus(0)">
+                        <input type="text" value="1" class="item_num">
+                        <input type="button" value="+" class="item_button" onclick="add(0)">
                     </div>
                     <div class="addtocart">
                         <!-- 加入購物車的按鈕 -->

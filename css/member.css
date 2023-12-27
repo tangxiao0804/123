@@ -1,4 +1,148 @@
-html {
-    height: 100%;
+main {
+    background-color: white !important;
     width: 100%;
+    height: 100%;
+}
+
+.mcontain {
+    width: 100%;
+    display: flex;
+}
+
+.mleft {
+    position: relative;
+    top: 250px;
+    left: 500px;
+    width: 300px;
+}
+
+.mright {
+    width: 380px;
+    position: relative;
+    top: 250px;
+    left: 700px;
+}
+
+.mcard {
+    width: 420px;
+    background: linear-gradient(151deg, #c1b4a0, #85614d);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.border {
+    border: 2px solid hsla(0, 0%, 100%, .8);
+    border-radius: 10px;
+    color: #fff;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.main-info {
+    display: grid;
+    margin-bottom: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.d-flex h6 {
+    font-size: 18px;
+}
+
+.main-info p {
+    text-align: left;
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.d-flex {
+    display: grid;
+}
+
+.down {
+    display: flex;
+    width: 220px;
+}
+
+.sub-info {
+    border-right: 1px dashed hsla(0, 0%, 100%, .8);
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 110px;
+    height: 50px;
+}
+
+.sub-info span {
+    position: relative;
+    left: 5px;
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 14px;
+    letter-spacing: .4px;
+}
+
+.sub-info p {
+    padding-top: 5px;
+    letter-spacing: .5px;
+    text-align: left !important;
+}
+
+.coin::before {
+    content: "NT$";
+}
+
+.sub-info:last-child {
+    border-right-color: transparent;
+}
+
+.outline {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    padding: 24px 15px;
+    display: grid;
+}
+
+.bill {
+    width: 420px;
+}
+
+.btitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+label {
+    color: #522c01 !important;
+}
+
+a {
+    color: #0471ca;
+    font-size: 15px;
+}
+
+.group {
+    margin-bottom: 24px;
+}
+
+.form-control {
+    width: 338px;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    font-size: 13px;
+    height: 40px;
+    letter-spacing: .5px;
+    line-height: 1;
+    padding: 11px 8px;
+}
+
+.btn {
+    background-color: #522c01;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-bottom: 14.5px;
+    padding-top: 14.5px;
+    width: 100%;
+    border-radius: 0px;
 }

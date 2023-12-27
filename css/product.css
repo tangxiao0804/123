@@ -111,6 +111,14 @@ a {
     object-fit: cover;
 }
 
+.banbutton::after{
+    background-image: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+
 footer {
     display: block;
     color: #988946;
@@ -120,8 +128,4 @@ footer {
     line-height: .3;
     height: 200px;
     width: 100%;
-}
-
-.banbutton::after{
-    background-image: none;
 }
