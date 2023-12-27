@@ -58,3 +58,14 @@ $(document).ready(function () {
         $(targetPanel).collapse('toggle');
     });
 });
+
+function redirectToOtherPage(num) {
+    if (num == 2) {
+        window.location.assign("product2.html");
+    }
+
+    if (num == 3) {
+        window.location.assign("product3.html");
+    }
+
+}
