@@ -1,4 +1,92 @@
-html {
-    height: 100%;
-    width: 100%;
+.mleft {
+    position: relative;
+    top: 250px;
+    left: 200px;
+    width: 300px;
+    display: grid;
+}
+
+.mcard {
+    width: 420px;
+    background: linear-gradient(90deg, #859398, #283048);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.border {
+
+    border: 2px solid hsla(0, 0%, 100%, .8);
+    border-radius: 10px;
+    color: #fff;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.main-info {
+    display: grid;
+    margin-bottom: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.d-flex h6 {
+    font-size: 18px;
+}
+
+.main-info p {
+    text-align: left;
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.d-flex {
+    display: grid;
+}
+
+.down {
+    display: flex;
+    width: 220px;
+}
+
+.sub-info {
+    border-right: 1px dashed hsla(0, 0%, 100%, .8);
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 110px;
+    height: 50px;
+}
+
+.sub-info span {
+    position: relative;
+    left: 5px;
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 14px;
+    letter-spacing: .4px;
+
+}
+
+.sub-info p {
+    padding-top: 5px;
+    letter-spacing: .5px;
+    text-align: left !important;
+}
+
+.coin::before {
+    content: "NT$";
+}
+
+.sub-info:last-child {
+    border-right-color: transparent;
+}
+
+.bill {
+    position: relative;
+    border: 10px;
+    border-color: aquamarine;
+}
+
+.form {
+    border: 1px;
 }

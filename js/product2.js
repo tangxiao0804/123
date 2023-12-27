@@ -59,18 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (linkText === "浪漫首選") {
                 targetPageNumber = 3;
             }
-
             if (linkText === "新品") {
                 targetPageNumber = 4;
             }
-
             if (linkText === "花束") {
                 targetPageNumber = 5;
             }
-            
-            if (linkText === "玻璃罩") {
-                targetPageNumber = 6;
-            }
+
             showPage(targetPageNumber);
         });
     });
