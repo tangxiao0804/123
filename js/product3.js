@@ -3,8 +3,8 @@ function redirectToOtherPage(num) {
         window.location.assign("product1.html");
     }
 
-    if (num == 3) {
-        window.location.assign("product3.html");
+    if (num == 2) {
+        window.location.assign("product2.html");
     }
 
 }
