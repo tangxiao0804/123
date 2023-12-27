@@ -15,6 +15,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function prevPage() {
+        if (currentPage > 1) {
+            currentPage = currentPage - 1;
+        }
+        showPage(currentPage);
+    }
+
+    function nextPage() {
+        const pageCount = document.querySelectorAll('.list-item').length;
+        if (currentPage < pageCount) {
+            currentPage = currentPage + 1;
+        }
+        showPage(currentPage);
+    }
+
+    document.getElementById('prevButton').addEventListener('click', prevPage);
+    document.getElementById('nextButton').addEventListener('click', nextPage);
+
+    document.querySelectorAll('.page-button').forEach(button => {
+        button.addEventListener('click', function () {
+            const pageNumber = parseInt(this.dataset.page);
+            showPage(pageNumber);
+        });
+    });
+
     document.querySelectorAll('#collapseOne a, #collapseTwo a').forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();
@@ -34,21 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
             if (linkText === "浪漫首選") {
                 targetPageNumber = 3;
             }
-
             if (linkText === "新品") {
                 targetPageNumber = 4;
             }
-
             if (linkText === "花束") {
                 targetPageNumber = 5;
             }
 
-            if (linkText === "玻璃罩") {
-                targetPageNumber = 6;
-            }
             showPage(targetPageNumber);
         });
     });
+
+
 });
 
 $(document).ready(function () {
