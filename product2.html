@@ -123,34 +123,18 @@
     <script src="/js/login.js"></script>
 
     <div class="clearfix"></div>
-
     <div class="pcontainer">
         <aside>
             <div class="center">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                onclick="redirectToOtherPage(1)">
                                 鮮花
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="product.html">浪漫首選</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#page2">歡慶畢業</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#page3">聖誕限定</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
@@ -159,12 +143,12 @@
                                 永生花
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <table border="1">
                                     <tr>
-                                        <td><a href="#page4">新品</a></td>
+                                        <td><a href="#page1">新品</a></td>
                                     </tr>
                                     <tr>
                                         <td><a href="#page5">花束</a></td>
@@ -179,7 +163,8 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header banbutton" id="headingThree">
                             <button class="accordion-button collapsed banbutton" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                onclick="redirectToOtherPage(3)">
                                 多肉植物
                             </button>
                         </h2>
@@ -189,10 +174,10 @@
         </aside>
         <main class="item">
             <!-- 產品 3*2  第一頁商品 -->
-            <div class="row row-cols-1 row-cols-3 list-item" id="page4">
+            <div class="row row-cols-1 row-cols-3 list-item" id="page1">
                 <div class="col">
                     <div class="card h-100 ">
-                        <img src="img/flower/FN01.jpg" class="card-img-top" alt="...">
+                        <img src="img/flower/FN04.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">哈哈我</h2>
                         </div>
@@ -216,7 +201,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/flower/FN04.jpg" class="card-img-top" alt="...">
+                        <img src="img/flower/FN01.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">岩海之戀</h2>
                         </div>
@@ -341,30 +326,6 @@
                     </div>
                 </div>
             </div>
-            <!-- 按鈕 -->
-            <nav aria-label="Page navigation example" class="page">
-                <ul class="pagination justify-content-center pagination-lg">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous" id="prevButton">
-                            <span aria-hidden="true">上一頁</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <button class="page-link page-button" data-page="1" href="#" onclick="showPage(1)">1</button>
-                    </li>
-                    <li class="page-item">
-                        <button class="page-link page-button" data-page="2" href="#" onclick="showPage(2)">2</button>
-                    </li>
-                    <li class="page-item">
-                        <button class="page-link page-button" data-page="2" href="#" onclick="showPage(3)">3</button>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next" id="nextButton">
-                            <span aria-hidden="true">下一頁</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
             <script src="js/product.js"></script>
         </main>
     </div>

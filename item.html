@@ -3,259 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>初栖花坊</title>
+    <title>產品詳細頁</title>
+    <link rel="stylesheet" href="css/item.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/item.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/item.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <div class="logohead">
-                <div class="logopic">
-                    <a href="index.html">
-                        <img src="img/logo/logo.png" style="width: 100%;">
-                    </a>
+        <div class="Product">
+            <div class="ptitle">
+                <div class="bigtitle">
+                    <h1>Product</h1>
+                </div>
+                <div class="smalltitle">
+                    <!-- 呃 就是分類 -->
                 </div>
             </div>
-            <nav>
-                <a href="index.html">首頁</a>
-                <div class="itemlist">
-                    <div class="dropdown">
-                        <div class="dropbtn">
-                            <a href="product.html">初栖選品</a>
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="product.html#collapseOne">鮮花</a>
-                            <a href="product2.html">永生花</a>
-                            <a href="product3.html">多肉植物</a>
-                        </div>
-                    </div>
+        </div>
+        <div class="box">
+            <div class="leftbox">
+                <div class="picture">
+                    <img src="img/flower/C05.jpg" alt="" width="75%">
+                    <!-- 哈哈是照片啦 -->
                 </div>
-                <a href="flower.html">鮮花故事</a>
-                <a href="index.html">關於我們</a>
-                <a href="member.html">會員中心</a>
-            </nav>
-            <div class="head3">
-                <div class="flexbox">
-                    <div class="search">
-                        <div>
-                            <input type="text" placeholder="尋找產品" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="loginicon">
-                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <img src="img/icon/account.png" class="icon">
-                    </a>
-                </div>
-                <div class="shoppingicon">
-                    <a href="shoppingcart.html">
-                        <img src="img/icon/shopping-cart.png" class="icon1">
-                    </a>
+                <div class="thumbnail">
+                    <img src="" alt="" width="20%">
+                    <!-- 哈哈又是照片啦 -->
                 </div>
             </div>
-        </header>
-
-        <div class="container modal fade" id="loginModal">
-            <div class="welcome modal-dialog">
-                <div class="modal-content">
-                    <div class="pinkbox">
-                        <div class="signup nodisplay">
-                            <h1>註冊</h1>
-                            <form autocomplete="off">
-                                <input type="text" placeholder="用戶名稱">
-                                <input type="email" placeholder="電子郵件">
-                                <input type="password" placeholder="密碼">
-                                <input type="password" placeholder="確認密碼">
-                                <button class="button submit">創建帳戶 </button>
-                            </form>
-                        </div>
-                        <div class="signin">
-                            <h1>登入</h1>
-                            <form class="more-padding" autocomplete="off">
-                                <input type="text" placeholder="用戶名稱">
-                                <input type="password" placeholder="密碼">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="remember" /><label for="remember">記住我</label>
-                                </div>
-                                <button class="button submit">登入</button>
-                            </form>
-                        </div>
+            <div class="rightbox">
+                <div class="name">
+                    <h5>簡介(小標)</h5>
+                    <h3>花名</h3>
+                </div>
+                <div class="star">
+                    <!-- 星星在這裡 -->
+                    <div class="star" id="star-rating">
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="1"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
+                            width="40"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
+                            width="40"></iconify-icon>
                     </div>
-                    <div class="leftbox">
-                        <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                        <p class="desc">pick your perfect <span>bouquet</span></p>
-                        <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
-                            alt="1357d638624297b" border="0">
-                        <p class="account">已經有帳號了嗎?</p>
-                        <button class="button" id="signin">登入</button>
+                </div>
+                <div class="price">
+                    <!-- 價錢desu -->
+                </div>
+                <div class="buy">
+                    <h5>buy</h5><br>
+                    <div class="add_minus">
+                        <input type="button" value="-" class="item_button" onclick="minus(0)">
+                        <input type="text" value="1" class="item_num">
+                        <input type="button" value="+" class="item_button" onclick="add(0)">
                     </div>
-                    <div class="rightbox">
-                        <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                        <p class="desc"> pick your perfect <span>bouquet</span></p>
-                        <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
-                        <p class="account">還沒有帳號嗎?</p>
-                        <button class="button" id="signup">註冊</button>
+                    <div class="addtocart">
+                        <!-- 加入購物車的按鈕 -->
+                    </div>
+                    <div class="heart">
+                        <!-- 加入收藏 -->
                     </div>
                 </div>
             </div>
         </div>
-        <script src="js/login.js"></script>
-        <main>
-            <div class="product">
-                <div class="ptitle">
-                    <div class="bigtitle">
-                        <h3>Product</h3>
-                    </div>
-                    <div class="smalltitle">
-                        <!-- 呃 就是分類 -->
-                    </div>
+        <div class="tag">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="describe-tab" data-bs-toggle="tab" data-bs-target="#describe"
+                        type="button" role="tab" aria-controls="describe" aria-selected="true">描述</button>
+                    <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#wyy" type="button"
+                        role="tab" aria-controls="wyy" aria-selected="false">WYY</button>
+                    <button class="nav-link" id="hungry-tab" data-bs-toggle="tab" data-bs-target="#hungry" type="button"
+                        role="tab" aria-controls="hungry" aria-selected="false">肚子餓</button>
                 </div>
-
-                <div class="clearfix"></div>
-
-                <div class="box">
-                    <div class="leftbox">
-                        <div class="picture">
-                            <img src="" alt="">
-                            <!-- 哈哈是照片啦 -->
-                        </div>
-                        <div class="thumbnail">
-                            <img src="" alt="" width="20%">
-                            <!-- 哈哈又是照片啦 -->
-                        </div>
-                    </div>
-                    <div class="rightbox">
-                        <div class="detail">
-                            <div class="name">
-                                <h5>簡介(小標)</h5>
-                                <h3>花名</h3>
-                            </div>
-                            <div class="star">
-                                <!-- 星星在這裡 -->
-                            </div>
-                            <div class="price">
-                                <!-- 價錢desu -->
-                            </div>
-                            <div class="information">
-                                <!-- 好像又是簡介 -->
-                            </div>
-                            <div class="buy">
-                                <h5>buy</h5><br>
-                                <div class="buybutton">
-                                    <div class="quantity">
-                                        <!-- 選數量用 -->
-                                    </div>
-                                    <div class="addtocart">
-                                        <!-- 加入購物車的按鈕 -->
-                                    </div>
-                                    <div class="heart">
-                                        <!-- 加入收藏 -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </nav>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="describe" role="tabpanel" aria-labelledby="home-tab">
+                    你現在看到一行描述
                 </div>
-
-                <div class="clearfix"></div>
-
-                <div class="tag">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="describe-tab" data-bs-toggle="tab"
-                                data-bs-target="#describe" type="button" role="tab" aria-controls="describe"
-                                aria-selected="true">描述</button>
-                            <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#wyy"
-                                type="button" role="tab" aria-controls="wyy" aria-selected="false">WYY</button>
-                            <button class="nav-link" id="hungry-tab" data-bs-toggle="tab" data-bs-target="#hungry"
-                                type="button" role="tab" aria-controls="hungry" aria-selected="false">肚子餓</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="describe" role="tabpanel" aria-labelledby="home-tab">
-                            你現在看到一行描述
-                        </div>
-                        <div class="tab-pane fade" id="wyy" role="tabpanel" aria-labelledby="profile-tab">
-                            wyyyyyyyyyyyyyyyyyyy</div>
-                        <div class="tab-pane fade" id="hungry" role="tabpanel" aria-labelledby="contact-tab">巴豆妖</div>
-                    </div>
-                </div>
-                <div class="like">
-                    <div class="items">
-                        <div class="pic">
-                        </div>
-                        <div class="detail2">
-                            <div class="star">5星好評</div>
-                            <div class="describe">這朵花很漂亮</div>
-                            <div class="products-price">$500</div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="pic">
-                        </div>
-                        <div class="detail2">
-                            <div class="star">5星好評</div>
-                            <div class="describe">這朵花很香</div>
-                            <div class="products-price">$800</div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="pic">
-                        </div>
-                        <div class="detail2">
-                            <div class="star">5星好評</div>
-                            <div class="describe">這朵花很漂亮</div>
-                            <div class="products-price">$1000</div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="pic">
-                        </div>
-                        <div class="detail2">
-                            <div class="star">5星好評</div>
-                            <div class="describe">這朵花很香</div>
-                            <div class="products-price">$1200</div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="pic">
-                        </div>
-                        <div class="detail2">
-                            <div class="star">5星好評</div>
-                            <div class="describe">這朵花很漂亮</div>
-                            <div class="products-price">$150</div>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="wyy" role="tabpanel" aria-labelledby="profile-tab">
+                    wyyyyyyyyyyyyyyyyyyy</div>
+                <div class="tab-pane fade" id="hungry" role="tabpanel" aria-labelledby="contact-tab">巴豆妖
                 </div>
             </div>
-        </main>
 
-        <div class="clearfix"></div>
-
-        <footer>
-            <div class="footerlogo">
-                <img src="img/logo/logo.png" style="width: 150px;">
-                <br>
-                <h3 class="name">初栖 Seventh Day</h3>
-                <br>
-                copyright © 2023 All Seventh Day
-        </footer>
+        </div>
+        <div class="like">
+            <div class="items">
+                <div class="pic">
+                </div>
+                <div class="detail2">
+                    <div class="star">5星好評</div>
+                    <div class="describe">這朵花很漂亮</div>
+                    <div class="products-price">$500</div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="pic">
+                </div>
+                <div class="detail2">
+                    <div class="star">5星好評</div>
+                    <div class="describe">這朵花很香</div>
+                    <div class="products-price">$800</div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="pic">
+                </div>
+                <div class="detail2">
+                    <div class="star">5星好評</div>
+                    <div class="describe">這朵花很漂亮</div>
+                    <div class="products-price">$1000</div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>

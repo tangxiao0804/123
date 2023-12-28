@@ -109,3 +109,7 @@ new Vue({
     }
   }
 });
+
+function alert(){
+  window.alert("123");
+}
