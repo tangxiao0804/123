@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>初栖會員</title>
+    <title>初栖花坊</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-
+    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/member.css">
-    <script src="js/login.js"></script>
-    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -65,10 +64,8 @@
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
-
         </div>
     </header>
-
     <div class="container modal fade" id="loginModal">
         <div class="welcome modal-dialog">
             <div class="modal-content">
@@ -80,7 +77,7 @@
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
                             <input type="password" placeholder="確認密碼" name="confirm">
-                            <button class="button_login submit">創建帳戶 </button>
+                            <button class="button submit">創建帳戶 </button>
                         </form>
                     </div>
                     <div class="signin">
@@ -91,7 +88,7 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
-                            <button class="button_login submit">登入</button>
+                            <button class="button submit">登入</button>
                         </form>
                     </div>
                 </div>
@@ -101,99 +98,21 @@
                     <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
                         alt="1357d638624297b" border="0">
                     <p class="account">已經有帳號了嗎?</p>
-                    <button class="button_login" id="signin">登入</button>
+                    <button class="button" id="signin">登入</button>
                 </div>
                 <div class="rightbox">
                     <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
                     <p class="desc"> pick your perfect <span>bouquet</span></p>
                     <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
                     <p class="account">還沒有帳號嗎?</p>
-                    <button class="button_login" id="signup">註冊</button>
+                    <button class="button" id="signup">註冊</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/login.js"></script>
-    </div>
-
-    <main>
-        <div class="containnav">
-            <div>
-
-            </div>
-        </div>
-        <div class="mcontain">
-            <div class="mleft">
-                <div class="mcard">
-                    <div class="border">
-                        <div class="col main-info">
-                            <div class="d-flex">
-                                <h6>一般會員</h6>
-                            </div>
-                            <p>帳號: a123456@gmail.com</p>
-                        </div>
-                        <div class="down">
-                            <div class="col sub-info">
-                                <span>購物金</span>
-                                <p>
-                                    <span class="coin">
-                                        "0"
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="col sub-info">
-                                <span>帳戶餘額</span>
-                                <p>
-                                    <span class="coin">
-                                        "0"
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="outline bill">
-                    <div class="btitle">
-                        雲端發票設定
-                    </div>
-                    <div>
-                        <a href="https://www.einvoice.nat.gov.tw/portal/btc/btc103w/main/ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LlRBMk5EazBPRFVpTENKaVlXTnJYM1Z5YkNJNkltaDBkSEJ6T2k4dmQzZDNMbmRsWVhabGNpNWpiMjB1ZEhjdmFXNTJiMmxqWlM5eVpXTmxhWFpsWDJGd2NHeDVJaXdpWTJGeVpGOTBlWEJsSWpvaVVsVmpkMDVxVlhnaUxDSjBiMnRsYmlJNklqSmtNbU01WVRka01XTmlNVE16TTJSaU9HVXdaRFJtWm1NNE56VTNOVFJoSWl3aVpYaHdJam94TnpBek5qWXdNRGs0ZlFleUpqWVhKa1gyNXZjeUk2SWtOaGNtUk9iM05FVkU5N1kyRnlaRjl6WlhFOUp6RW5MQ0JqWVhKZmJtOHhQU2ROVkZGNFQwUmpQU2NzSUdOaGNtUmZibTh5UFNkTlZGRjRUMFJqUFNkOUlpd2lablZ1WXlJNklrSlVRekV3TTBraUxDSmpZWEprWDI1dk1pSTZJazFVVVhoUFJHTTlJaXdpWTJGeVpGOXViekVpT2lKTlZGRjRUMFJqUFNJc0ltTmhjbVJmWW1GdUlqb2lPLmZzSndWV25SUERXZ01HbHZfdVk3M3VuTDB3MXdkNzJFZm11TVRRbk5XVUk="
-                            target="_blank">
-                            電子發票載具歸戶
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mright">
-                <form class="outline">
-                    <div class="group">
-                        <label for="name">用戶名稱</label><br>
-                        <input type="text" class="form-control" value="帥哥" name="id">
-                    </div>
-                    <div class="group">
-                        <label for="mail">電子郵件</label><br>
-                        <input type="email" class="form-control" value="a123456@gmail.com" name="mail">
-                    </div>
-                    <div class="group">
-                        <label for="mobile">行動電話</label><br>
-                        <input type="text" class="form-control" value="0912345678" name="mobile">
-                    </div>
-                    <div class="group">
-                        <label for="address">地址</label><br>
-                        <input type="text" class="form-control" value="台中市西屯區市政北七路87號" name="address">
-                    </div>
-                    <div class="group">
-                        <label for="pwd">密碼修改</label><br>
-                        <input type="text" class="form-control" name="pwd">
-                    </div>
-                    <button type="submit" class="btn">
-                        確定修改
-                    </button>
-                </form>
-            </div>
-        </div>
-        </div>
-    </main>
+    <iframe src="item.html" frameborder="0" allowfullscreen scrolling="no"
+        style="height: 1300px; width: 100%; overflow: visible;"></iframe>
     <footer>
         <div class="footerlogo">
             <img src="img/logo/logo.png" style="width: 150px;">

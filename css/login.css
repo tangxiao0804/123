@@ -126,7 +126,7 @@ span {
     transition: background-color 1s ease-out;
 }
 
-button {
+.button {
     margin-top: 3%;
     background: #f6f6f655;
     color: #cea77d;
@@ -160,7 +160,6 @@ form {
 }
 
 .submit:hover {
-
     background: #fdfdfd;
     border-color: #c6ac9a;
 }
