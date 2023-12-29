@@ -81,7 +81,7 @@
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
                             <input type="password" placeholder="確認密碼" name="confirm">
-                            <button class="button submit">創建帳戶 </button>
+                            <button class="button_login submit">創建帳戶 </button>
                         </form>
                     </div>
                     <div class="signin">
@@ -92,7 +92,7 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
-                            <button class="button submit">登入</button>
+                            <button class="button_login submit">登入</button>
                         </form>
                     </div>
                 </div>
@@ -102,14 +102,14 @@
                     <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
                         alt="1357d638624297b" border="0">
                     <p class="account">已經有帳號了嗎?</p>
-                    <button class="button" id="signin">登入</button>
+                    <button class="button_login" id="signin">登入</button>
                 </div>
                 <div class="rightbox">
                     <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
                     <p class="desc"> pick your perfect <span>bouquet</span></p>
                     <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
                     <p class="account">還沒有帳號嗎?</p>
-                    <button class="button" id="signup">註冊</button>
+                    <button class="button_login" id="signup">註冊</button>
                 </div>
             </div>
         </div>
@@ -123,60 +123,21 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                onclick="redirectToOtherPage(1)">
                                 鮮花
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="">浪漫首選</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">歡慶畢業</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">聖誕限定</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">傳統雞排</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">香酥雞排</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">好想吃雞排</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                onclick="redirectToOtherPage(2)">
                                 永生花
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="">新品</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">花束</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">玻璃罩</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
@@ -188,263 +149,10 @@
                     </div>
                 </div>
             </div>
-
         </aside>
         <main class="item">
-            <!-- 產品 3*2  第一頁商品 -->
+            <!-- 產品 3*2  商品 -->
             <div class="row row-cols-1 row-cols-3 list-item" id="page1">
-                <div class="col">
-                    <div class="card h-100 ">
-                        <img src="img/flower/R01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">哈哈我</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">努力寫網頁</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">結果</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">岩海之戀</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R05.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">仲夏夜夢</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R06.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">忘記做啦QAQ</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 第二頁商品 -->
-            <div class="row row-cols-1 row-cols-3 list-item" id="page2">
-                <div class="col">
-                    <div class="card h-100 ">
-                        <img src="img/flower/G01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">歌頌青春</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/G02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">少年的你</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/G03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">後浪入海</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/G04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">追光</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/G05.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">逆風飛翔</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/G06.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">不算分別</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 第三頁商品 -->
-            <div class="row row-cols-1 row-cols-3 list-item" id="page3">
-                <div class="col">
-                    <div class="card h-100 ">
-                        <img src="img/flower/C01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">聖誕老人</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/C02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">冬日來信</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/C03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">平安夜</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/C04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">初雪</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/C05.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">聖誕頌歌</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/C06.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">蘋蘋安安</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-3 list-item" id="page4">
-                <div class="col">
-                    <div class="card h-100 ">
-                        <img src="img/flower/R01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">哈哈我</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">努力寫網頁</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">結果</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">遊戲</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R05.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">日常</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R06.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">忘記做啦QAQ</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-3 list-item" id="page5">
-                <div class="col">
-                    <div class="card h-100 ">
-                        <img src="img/flower/R01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">哈哈我</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">努力寫網頁</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">結果</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">遊戲</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R05.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">日常</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="img/flower/R06.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">忘記做啦QAQ</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-3 list-item" id="page6">
                 <div class="col">
                     <div class="card h-100 ">
                         <img src="img/flower/S01.jpg" class="card-img-top" alt="...">

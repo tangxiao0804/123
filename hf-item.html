@@ -12,7 +12,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
     <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +37,7 @@
                     </div>
                     <div class="dropdown-content">
                         <a href="product.html#collapseOne">鮮花</a>
-                        <a href="product2.html#collapseTwo">永生花</a>
+                        <a href="product2.html">永生花</a>
                         <a href="product3.html">多肉植物</a>
                     </div>
                 </div>
@@ -65,10 +64,8 @@
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
-
         </div>
     </header>
-
     <div class="container modal fade" id="loginModal">
         <div class="welcome modal-dialog">
             <div class="modal-content">
@@ -80,7 +77,7 @@
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
                             <input type="password" placeholder="確認密碼" name="confirm">
-                            <button class="button_login submit">創建帳戶 </button>
+                            <button class="button submit">創建帳戶 </button>
                         </form>
                     </div>
                     <div class="signin">
@@ -91,7 +88,7 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
-                            <button class="button_login submit">登入</button>
+                            <button class="button submit">登入</button>
                         </form>
                     </div>
                 </div>
@@ -101,133 +98,21 @@
                     <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
                         alt="1357d638624297b" border="0">
                     <p class="account">已經有帳號了嗎?</p>
-                    <button class="button_login" id="signin">登入</button>
+                    <button class="button" id="signin">登入</button>
                 </div>
                 <div class="rightbox">
                     <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
                     <p class="desc"> pick your perfect <span>bouquet</span></p>
                     <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
                     <p class="account">還沒有帳號嗎?</p>
-                    <button class="button_login" id="signup">註冊</button>
+                    <button class="button" id="signup">註冊</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/login.js"></script>
-
-    <main>
-        <div class="banner">
-            <div class="bannerimg"></div>
-            <div class="textbox">
-                <div class="text">
-                    <p class="cn">用一束花，講述一個浪漫的故事</p>
-                    <br>
-                    <p class="eng"> Tell a romantic story with a bunch of flower</p>
-                </div>
-                <div class="bannerbtn">
-                    <a class="btn-draw" href="product.html"><span>立即選購</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="allitem">
-            <div class="sellitem1">
-                <a href="product.html#collapseOne"><img src="img/flower/pic01.jpg" class="sellpic"></a>
-            </div>
-            <div class="sname1">
-                <a>鮮花</a>
-            </div>
-            <div class="sellitem2">
-                <a href="product2.html"><img src="img/flower/pic02.jpg" class="sellpic"></a>
-            </div>
-            <div class="sname2">
-                <a>永生花</a>
-            </div>
-            <div class="sellitem3">
-                <a href="product3.html"><img src="img/flower/pic03.jpg" class="sellpic"></a>
-                <div class="sname3">
-                    <a>多肉植物</a>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="slide">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="product2.html#page1"><img src="img/indexAD/ad01.png" class="d-block w-100"></a>
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="product.html#page1"><img src="img/indexAD/ad02.png" class="d-block w-100"></a>
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <div class="bestseller">
-            <div class="head">
-                熱銷商品
-            </div>
-            <div class="bsitem">
-                <div class="bsitem1">
-                    <div class="bsimg">
-                        <img src="img/flower/F02.jpg">
-                    </div>
-                    <div class="bsdetail">
-                        <div class="bsname">
-                            名字
-                        </div>
-                        <div class="bsprice">
-                            價錢
-                        </div>
-                    </div>
-                </div>
-                <div class="bsitem2">
-                    <div class="bsimg">
-                        <img src="img/flower/F02.jpg">
-                    </div>
-                    <div class="bsdetail">
-                        <div class="bsname">
-                            名字
-                        </div>
-                        <div class="bsprice">
-                            價錢
-                        </div>
-                    </div>
-                </div>
-                <div class="bsitem3">
-                    <div class="bsimg">
-                        <img src="img/flower/F02.jpg">
-                    </div>
-                    <div class="bsdetail">
-                        <div class="bsname">
-                            名字
-                        </div>
-                        <div class="bsprice">
-                            價錢
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
+    <iframe src="item.html" frameborder="0" allowfullscreen scrolling="no"
+        style="height: 1300px; width: 100%; overflow: visible;"></iframe>
     <footer>
         <div class="footerlogo">
             <img src="img/logo/logo.png" style="width: 150px;">
@@ -237,7 +122,6 @@
             copyright © 2023 All Seventh Day
     </footer>
     <div class="clearfix"></div>
-
 </body>
 
 </html>

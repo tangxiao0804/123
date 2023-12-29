@@ -13,3 +13,6 @@ function add(i) {
   } else window.alert("商品數量不得超過100");
 
 }
+function alert() {
+  window.alert("123");
+}

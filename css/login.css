@@ -20,7 +20,7 @@
     position: absolute;
     top: -40px;
     left: 5%;
-    background: #eac7cc;
+    background: #ead2c7;
     width: 320px;
     height: 500px;
     border-radius: 5px;
@@ -88,7 +88,7 @@ p {
 }
 
 span {
-    color: #eac7cc;
+    color: #ead2c7;
 }
 
 .flower {
@@ -108,7 +108,7 @@ span {
     opacity: 0.9;
 }
 
-button {
+.button_login {
     padding: 12px;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ button {
     display: block;
 }
 
-button:hover {
+.button_login:hover {
     background: #e6ded3;
     color: #af8c6b;
     transition: background-color 1s ease-out;
@@ -129,8 +129,8 @@ button:hover {
 .button {
     margin-top: 3%;
     background: #f6f6f655;
-    color: #ce7d88;
-    border: solid 1px #eac7cc;
+    color: #cea77d;
+    border: solid 1px #ead2c7;
 }
 
 /* form styling */
@@ -156,18 +156,18 @@ form {
 .submit {
     margin-top: 25px;
     padding: 12px;
-    border-color: #ce7d88;
+    border-color: #ddb7a5;
 }
 
 .submit:hover {
-    background: #cbc0d3;
-    border-color: #bfb1c9;
+    background: #fdfdfd;
+    border-color: #c6ac9a;
 }
 
 input {
-    background: #FAEED1;
+    background: #FFF;
     width: 65%;
-    color: #cbb89f;
+    color: #DBDBDB;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;

@@ -24,6 +24,13 @@ aside {
     top: 205px;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .accordion-button {
     float: left;
 }
@@ -34,9 +41,9 @@ nav>.page {
 }
 
 table {
-    align-items: flex-start;
     border-collapse: collapse;
     border: none;
+    margin: auto;
 }
 
 tbody {
@@ -54,6 +61,7 @@ table a {
 
 .accordion {
     width: 50%;
+    margin: 0;
 }
 
 .card-body {
@@ -74,6 +82,7 @@ th {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    align-items: center;
 }
 
 a {
@@ -87,7 +96,7 @@ a {
 }
 
 .col {
-    margin-top: 60px;
+    margin-top: 0px;
     padding: 20px;
 }
 
@@ -103,6 +112,7 @@ a {
 
 .accordion-body {
     width: 300px;
+    padding: 0;
 }
 
 .card-img-top {
