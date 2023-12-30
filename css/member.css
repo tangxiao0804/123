@@ -178,3 +178,22 @@ input{
 .tag{
     text-align: center;
 }   
+
+.nt-value{
+    color: black;
+}
+
+.nt-value::before {
+    content: "NT$";
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+td,th{
+    border: 1px solid #ddd;
+    padding: 20px;
+}

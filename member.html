@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="shoppingicon">
-                <a href="shoppingcart.html">
+                <a href="hf-soppingcart.html">
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
@@ -78,7 +78,7 @@
                             <input type="text" placeholder="用戶名稱" name="id">
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
-                            <input type="password" placeholder="確認密碼" name="confirm">
+                            <input type="password" placeholder="確認密碼" name="pwd">
                             <button class="button_login submit">創建帳戶 </button>
                         </form>
                     </div>
@@ -202,14 +202,33 @@
             <div id="page2">
                 <div class="tag">
                     <div class="tabnav">
-                        <input type="button" value="全部訂單">
-                        <input type="button" value="訂單成立">
-                        <input type="button" value="未繳費">
-                        <input type="button" value="逾時或取消">
+                        <input type="button" value="全部訂單" onclick="showTag(1)">
+                        <input type="button" value="訂單成立" onclick="showTag(2)">
+                        <input type="button" value="未繳費" onclick="showTag(3)">
+                        <input type="button" value="逾時或取消" onclick="showTag(4)">
                     </div>
                     <div class="tag_list">
                         <div id="tag1">
-
+                            <table border="0">
+                                <tr>
+                                    <th>訂單編號</th>
+                                    <th>日期</th>
+                                    <th>總金額</th>
+                                    <th>訂單狀態</th>
+                                    <th>出貨狀態</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>202312317414</td>
+                                    <td>2023/12/31 12:19:22</td>
+                                    <td>
+                                        <span class="nt-value">1140</span>
+                                    </td>
+                                    <td>訂單成立</td>
+                                    <td>已出貨</td>
+                                    <td><input type="button" value="查看商品"></td>
+                                </tr>
+                            </table>
                         </div>
                         <div id="tag2">
 
