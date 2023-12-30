@@ -6,15 +6,20 @@
 
 html {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
     height: 100%;
+
 }
 
 main {
     width: 100%;
-    background: linear-gradient(200deg, white, #FFDAB9);
+    background: linear-gradient(200deg, white, #f9ebd2d2);
 
 }
 
@@ -25,7 +30,7 @@ main {
 
 .detailinfo {
     position: relative;
-    left: 300PX;
+    left: 270PX;
     display: flex;
     flex-wrap: wrap;
     width: 1400px;
@@ -85,6 +90,8 @@ main {
     top: 230px;
     transition: 0.5s;
     text-align: center;
+    font-weight: 300;
+    font-weight: bold;
 }
 
 .card:hover h1 {
@@ -99,6 +106,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    font-weight: bold;
 
 }
 
@@ -114,10 +122,13 @@ main {
 
 .contact {
     display: flex;
-
+    text-align: center;
 
 }
 
+iframe {
+    text-align: center;
+}
 
 h3 {
     margin-top: 0;
