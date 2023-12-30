@@ -4,6 +4,23 @@ main {
     height: 100%;
 }
 
+.containnav{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.my_icon, .history {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#page1, #page2 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .mcontain {
     width: 100%;
     display: flex;
@@ -11,7 +28,6 @@ main {
 
 .mleft {
     position: relative;
-    top: 250px;
     left: 500px;
     width: 300px;
 }
@@ -19,7 +35,6 @@ main {
 .mright {
     width: 380px;
     position: relative;
-    top: 250px;
     left: 700px;
 }
 
@@ -146,3 +161,20 @@ a {
     width: 100%;
     border-radius: 0px;
 }
+
+.list-item{
+    width: 100%;
+}
+
+.list-item > div {
+    display: none;
+}
+
+input{
+    width: 100px;
+    color: black;
+}
+
+.tag{
+    text-align: center;
+}   
