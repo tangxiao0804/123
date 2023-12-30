@@ -11,12 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/member.css">
-    <script src="js/login.js"></script>
     <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
 </head>
 
@@ -61,7 +60,7 @@
                 </a>
             </div>
             <div class="shoppingicon">
-                <a href="shoppingcart.html">
+                <a href="hf-soppingcart.html">
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
@@ -79,7 +78,7 @@
                             <input type="text" placeholder="用戶名稱" name="id">
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
-                            <input type="password" placeholder="確認密碼" name="confirm">
+                            <input type="password" placeholder="確認密碼" name="pwd">
                             <button class="button_login submit">創建帳戶 </button>
                         </form>
                     </div>
@@ -118,81 +117,144 @@
 
     <main>
         <div class="containnav">
-            <div>
+            <div class="my_icon">
+                <input type="button" value="我的資料" onclick="showPage(1)">
+            </div>
+            <div class=" history">
+                <input type="button" value="我的訂單" onclick="showPage(2)">
+            </div>
+        </div>
+        <div class="list-item">
+            <div id="page1">
+                <div class="mcontain">
+                    <div class="mleft">
+                        <div class="mcard">
+                            <div class="border">
+                                <div class="col main-info">
+                                    <div class="d-flex">
+                                        <h6>一般會員</h6>
+                                    </div>
+                                    <p>帳號: a123456@gmail.com</p>
+                                </div>
+                                <div class="down">
+                                    <div class="col sub-info">
+                                        <span>購物金</span>
+                                        <p>
+                                            <span class="coin">
+                                                "0"
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col sub-info">
+                                        <span>帳戶餘額</span>
+                                        <p>
+                                            <span class="coin">
+                                                "0"
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outline bill">
+                            <div class="btitle">
+                                雲端發票設定
+                            </div>
+                            <div>
+                                <a href="https://www.einvoice.nat.gov.tw/portal/btc/btc103w/main/ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LlRBMk5EazBPRFVpTENKaVlXTnJYM1Z5YkNJNkltaDBkSEJ6T2k4dmQzZDNMbmRsWVhabGNpNWpiMjB1ZEhjdmFXNTJiMmxqWlM5eVpXTmxhWFpsWDJGd2NHeDVJaXdpWTJGeVpGOTBlWEJsSWpvaVVsVmpkMDVxVlhnaUxDSjBiMnRsYmlJNklqSmtNbU01WVRka01XTmlNVE16TTJSaU9HVXdaRFJtWm1NNE56VTNOVFJoSWl3aVpYaHdJam94TnpBek5qWXdNRGs0ZlFleUpqWVhKa1gyNXZjeUk2SWtOaGNtUk9iM05FVkU5N1kyRnlaRjl6WlhFOUp6RW5MQ0JqWVhKZmJtOHhQU2ROVkZGNFQwUmpQU2NzSUdOaGNtUmZibTh5UFNkTlZGRjRUMFJqUFNkOUlpd2lablZ1WXlJNklrSlVRekV3TTBraUxDSmpZWEprWDI1dk1pSTZJazFVVVhoUFJHTTlJaXdpWTJGeVpGOXViekVpT2lKTlZGRjRUMFJqUFNJc0ltTmhjbVJmWW1GdUlqb2lPLmZzSndWV25SUERXZ01HbHZfdVk3M3VuTDB3MXdkNzJFZm11TVRRbk5XVUk="
+                                    target="_blank">
+                                    電子發票載具歸戶
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mright">
+                        <form class="outline">
+                            <div class="group">
+                                <label for="name">用戶名稱</label><br>
+                                <input type="text" class="form-control" value="帥哥" name="id">
+                            </div>
+                            <div class="group">
+                                <label for="mail">電子郵件</label><br>
+                                <input type="email" class="form-control" value="a123456@gmail.com" name="mail">
+                            </div>
+                            <div class="group">
+                                <label for="mobile">行動電話</label><br>
+                                <input type="text" class="form-control" value="0912345678" name="mobile">
+                            </div>
+                            <div class="group">
+                                <label for="address">地址</label><br>
+                                <input type="text" class="form-control" value="台中市西屯區市政北七路87號" name="address">
+                            </div>
+                            <div class="group">
+                                <label for="pwd">密碼修改</label><br>
+                                <input type="text" class="form-control" name="pwd">
+                            </div>
+                            <button type="submit" class="btn">
+                                確定修改
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="page2">
+                <div class="tag">
+                    <div class="tabnav">
+                        <input type="button" value="全部訂單" onclick="showTag(1)">
+                        <input type="button" value="訂單成立" onclick="showTag(2)">
+                        <input type="button" value="未繳費" onclick="showTag(3)">
+                        <input type="button" value="逾時或取消" onclick="showTag(4)">
+                    </div>
+                    <div class="tag_list">
+                        <div id="tag1">
+                            <table border="0">
+                                <tr>
+                                    <th>訂單編號</th>
+                                    <th>日期</th>
+                                    <th>總金額</th>
+                                    <th>訂單狀態</th>
+                                    <th>出貨狀態</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>202312317414</td>
+                                    <td>2023/12/31 12:19:22</td>
+                                    <td>
+                                        <span class="nt-value">1140</span>
+                                    </td>
+                                    <td>訂單成立</td>
+                                    <td>已出貨</td>
+                                    <td><input type="button" value="查看訂單" onclick="showPage(3)"></td>
+                                </tr>
+                                <tr>
+                                    <td>202401017414</td>
+                                    <td>2023/01/01 00:50:31</td>
+                                    <td>
+                                        <span class="nt-value">250</span>
+                                    </td>
+                                    <td>訂單成立</td>
+                                    <td>已出貨</td>
+                                    <td><input type="button" value="查看訂單" onclick="showPage(3)"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tag2">
 
-            </div>
-        </div>
-        <div class="mcontain">
-            <div class="mleft">
-                <div class="mcard">
-                    <div class="border">
-                        <div class="col main-info">
-                            <div class="d-flex">
-                                <h6>一般會員</h6>
-                            </div>
-                            <p>帳號: a123456@gmail.com</p>
                         </div>
-                        <div class="down">
-                            <div class="col sub-info">
-                                <span>購物金</span>
-                                <p>
-                                    <span class="coin">
-                                        "0"
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="col sub-info">
-                                <span>帳戶餘額</span>
-                                <p>
-                                    <span class="coin">
-                                        "0"
-                                    </span>
-                                </p>
-                            </div>
+                        <div id="tag3">
+
+                        </div>
+                        <div id="tag4">
+
                         </div>
                     </div>
                 </div>
-                <div class="outline bill">
-                    <div class="btitle">
-                        雲端發票設定
-                    </div>
-                    <div>
-                        <a href="https://www.einvoice.nat.gov.tw/portal/btc/btc103w/main/ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LlRBMk5EazBPRFVpTENKaVlXTnJYM1Z5YkNJNkltaDBkSEJ6T2k4dmQzZDNMbmRsWVhabGNpNWpiMjB1ZEhjdmFXNTJiMmxqWlM5eVpXTmxhWFpsWDJGd2NHeDVJaXdpWTJGeVpGOTBlWEJsSWpvaVVsVmpkMDVxVlhnaUxDSjBiMnRsYmlJNklqSmtNbU01WVRka01XTmlNVE16TTJSaU9HVXdaRFJtWm1NNE56VTNOVFJoSWl3aVpYaHdJam94TnpBek5qWXdNRGs0ZlFleUpqWVhKa1gyNXZjeUk2SWtOaGNtUk9iM05FVkU5N1kyRnlaRjl6WlhFOUp6RW5MQ0JqWVhKZmJtOHhQU2ROVkZGNFQwUmpQU2NzSUdOaGNtUmZibTh5UFNkTlZGRjRUMFJqUFNkOUlpd2lablZ1WXlJNklrSlVRekV3TTBraUxDSmpZWEprWDI1dk1pSTZJazFVVVhoUFJHTTlJaXdpWTJGeVpGOXViekVpT2lKTlZGRjRUMFJqUFNJc0ltTmhjbVJmWW1GdUlqb2lPLmZzSndWV25SUERXZ01HbHZfdVk3M3VuTDB3MXdkNzJFZm11TVRRbk5XVUk="
-                            target="_blank">
-                            電子發票載具歸戶
-                        </a>
-                    </div>
-                </div>
             </div>
-            <div class="mright">
-                <form class="outline">
-                    <div class="group">
-                        <label for="name">用戶名稱</label><br>
-                        <input type="text" class="form-control" value="帥哥" name="id">
-                    </div>
-                    <div class="group">
-                        <label for="mail">電子郵件</label><br>
-                        <input type="email" class="form-control" value="a123456@gmail.com" name="mail">
-                    </div>
-                    <div class="group">
-                        <label for="mobile">行動電話</label><br>
-                        <input type="text" class="form-control" value="0912345678" name="mobile">
-                    </div>
-                    <div class="group">
-                        <label for="address">地址</label><br>
-                        <input type="text" class="form-control" value="台中市西屯區市政北七路87號" name="address">
-                    </div>
-                    <div class="group">
-                        <label for="pwd">密碼修改</label><br>
-                        <input type="text" class="form-control" name="pwd">
-                    </div>
-                    <button type="submit" class="btn">
-                        確定修改
-                    </button>
-                </form>
+            <div id="page3">
+                無敵
             </div>
         </div>
-        </div>
+        <script src="js/member.js"></script>
     </main>
     <footer>
         <div class="footerlogo">

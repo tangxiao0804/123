@@ -13,6 +13,9 @@
         </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="js/item.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,35 +34,22 @@
             <div class="leftbox">
                 <div class="picture">
                     <img src="img/flower/C05.jpg" alt="" width="75%">
-                    <!-- 哈哈是照片啦 -->
                 </div>
                 <div class="thumbnail">
-                    <img src="" alt="" width="20%">
-                    <!-- 哈哈又是照片啦 -->
+                    <img src="img/flower/C05.jpg" alt="" width="40%">
                 </div>
             </div>
             <div class="rightbox">
                 <div class="name">
-                    <h5>簡介(小標)</h5>
-                    <h3>花名</h3>
+                    <h5>鮮花</h5>
+                    <h2>聖誕頌歌</h2>
                 </div>
-                <div class="star">
-                    <!-- 星星在這裡 -->
-                    <div class="star" id="star-rating">
-                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="1"
-                            width="40"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
-                            width="40"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
-                            width="40"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
-                            width="40"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
-                            width="40"></iconify-icon>
-                    </div>
+                <div class="rate">
+                    <div class="bstar">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+                    <div class="star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
                 </div>
                 <div class="price">
-                    <!-- 價錢desu -->
+                    <span class="nt-value">250</span>
                 </div>
                 <div class="buy">
                     <h5>buy</h5><br>
@@ -69,10 +59,10 @@
                         <input type="button" value="+" class="item_button" onclick="add(0)">
                     </div>
                     <div class="addtocart">
-                        <!-- 加入購物車的按鈕 -->
+                        <input type="button" value="加入購物車">
                     </div>
                     <div class="heart">
-                        <!-- 加入收藏 -->
+                        <input type="button" value="加入收藏">
                     </div>
                 </div>
             </div>
@@ -82,71 +72,95 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="describe-tab" data-bs-toggle="tab" data-bs-target="#describe"
                         type="button" role="tab" aria-controls="describe" aria-selected="true">描述</button>
-                    <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#wyy" type="button"
-                        role="tab" aria-controls="wyy" aria-selected="false">WYY</button>
-                    <button class="nav-link" id="hungry-tab" data-bs-toggle="tab" data-bs-target="#hungry" type="button"
-                        role="tab" aria-controls="hungry" aria-selected="false">肚子餓</button>
+                    <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button"
+                        role="tab" aria-controls="comment" aria-selected="false">評論</button>
                 </div>
             </nav>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="describe" role="tabpanel" aria-labelledby="home-tab">
                     你現在看到一行描述
                 </div>
-                <div class="tab-pane fade" id="wyy" role="tabpanel" aria-labelledby="profile-tab">
-                    wyyyyyyyyyyyyyyyyyyy</div>
-                <div class="tab-pane fade" id="hungry" role="tabpanel" aria-labelledby="contact-tab">巴豆妖
-                </div>
-            </div>
+                <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="profile-tab">
+                    <h2>發表您的評論</h2>
+                    <h4>您要評論的產品：</h4>
+                    <div class="myrate">
+                        <div class="quality">
+                            <div class="size">
+                                <span>評價：</span>
+                            </div>
+                            <div class="mystar">
+                                <div class="mystar" id="star-rating">
+                                    <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="1"
+                                        width="30"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="2"
+                                        width="30"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="3"
+                                        width="30"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="4"
+                                        width="30"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" class="star-icon" data-index="5"
+                                        width="30"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mycomment">
+                        <div class="cdata">
+                            <span>暱稱<br></span>
+                            <input type="text" name="nickname" id="nickname" value="帥哥">
+                            <span><br>評論標題<br></span>
+                            <input type="text" name="ctitle" id="ctitle">
+                        </div>
+                        <div class="cdetail">
 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="like">
+                <div class="items">
+                    <div class="pic">
+                    </div>
+                    <div class="detail2">
+                        <div class="describe">這朵花很漂亮</div>
+                        <div class="products-price">$500</div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="pic">
+                    </div>
+                    <div class="detail2">
+                        <div class="describe">這朵花很香</div>
+                        <div class="products-price">$800</div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="pic">
+                    </div>
+                    <div class="detail2">
+                        <div class="describe">這朵花很漂亮</div>
+                        <div class="products-price">$1000</div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="pic">
+                    </div>
+                    <div class="detail2">
+                        <div class="describe">這朵花很香</div>
+                        <div class="products-price">$1200</div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="pic">
+                    </div>
+                    <div class="detail2">
+                        <div class="describe">這朵花很漂亮</div>
+                        <div class="products-price">$150</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="like">
-            <div class="items">
-                <div class="pic">
-                </div>
-                <div class="detail2">
-                    <div class="star">5星好評</div>
-                    <div class="describe">這朵花很漂亮</div>
-                    <div class="products-price">$500</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="pic">
-                </div>
-                <div class="detail2">
-                    <div class="star">5星好評</div>
-                    <div class="describe">這朵花很香</div>
-                    <div class="products-price">$800</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="pic">
-                </div>
-                <div class="detail2">
-                    <div class="star">5星好評</div>
-                    <div class="describe">這朵花很漂亮</div>
-                    <div class="products-price">$1000</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="pic">
-                </div>
-                <div class="detail2">
-                    <div class="star">5星好評</div>
-                    <div class="describe">這朵花很香</div>
-                    <div class="products-price">$1200</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="pic">
-                </div>
-                <div class="detail2">
-                    <div class="star">5星好評</div>
-                    <div class="describe">這朵花很漂亮</div>
-                    <div class="products-price">$150</div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
