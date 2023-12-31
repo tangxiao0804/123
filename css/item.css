@@ -165,3 +165,84 @@
     height: 40px;
     font-size: 20px;
 }
+
+.leftbox {
+    text-align: center;
+}
+
+.thumbnail {
+    position: relative;
+    top: 10px;
+}
+
+.nt-value {
+    font-size: 40px;
+}
+
+.nt-value::before {
+    content: "NT$";
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+}
+
+.name>h5,
+.name>h2 {
+    padding: 10px;
+}
+
+.tag {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rate {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd;
+    overflow: hidden;
+    font-size: 30px;
+    text-shadow: 0px 1px 0 #999;
+}
+
+.star {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: orangered;
+}
+
+.quality,
+.price,
+.value {
+    display: table-row;
+    padding-top: 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#comment {
+    font-family: 'Poppins', sans-serif;
+    display: table;
+}
+
+.size {
+    display: table-cell;
+    font-size: 1.25rem;
+}
+
+.mystar {
+    display: table-cell;
+    vertical-align: middle;
+}
