@@ -4,7 +4,9 @@
 }
 
 iframe{
-    height: 1400px; 
-    width: 100%; 
-    overflow: visible;
+    height: 1500px;;
+    width: 100%;
+    overflow: auto;
+    border: none; 
 }
+
