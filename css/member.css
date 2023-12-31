@@ -1,7 +1,7 @@
 main {
     background-color: white !important;
     width: 100%;
-    height: 100%;
+    height: 1300px;
 }
 
 .containnav{
@@ -191,9 +191,169 @@ table{
     margin: auto;
     text-align: center;
     justify-content: center;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.check {
+    background-color: #522c0187;
+    color: #fff;
 }
 
 td,th{
-    border: 1px solid #ddd;
     padding: 20px;
+}
+
+/*  */
+.order {
+    border-bottom: 1px solid;
+    width: 60%;
+    border-color: #dbdbdb;
+    border-spacing: 2px;
+    margin-bottom: 60px;
+}
+
+.ordertitle {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 24px;
+    padding-top: 30px;
+}
+
+.col1 {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    height: 0;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+}
+
+.text {
+    text-align: center;
+}
+
+.order tr:first-child {
+    border-top-width: 0;
+}
+
+.order tr {
+    border-bottom-width: 0;
+    border-top: 1px solid #dbdbdb;
+}
+
+.table-title {
+    background-color: #fafafa;
+    border-bottom: 1px solid #dbdbdb;
+    color: rgba(66, 66, 66, .6);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table-account .table-content {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.itemdetail {
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.item-infoimg {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.item-infoimg img {
+    max-width: 80px;
+    width: 80px;
+}
+
+.item-price:only-child {
+    color: #424242;
+    text-decoration: unset;
+}
+
+.item-price:before {
+    content: "NT$";
+}
+
+.text-right {
+    text-align: right;
+    border-bottom: 0;
+    font-size: 13px;
+}
+
+.amount::before {
+    content: "NT$";
+}
+
+.amount {
+    color: #a35e47 !important;
+}
+
+.order-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.account-outline,
+.account-outline1 {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    padding: 24px 15px;
+    height: 250px;
+    width: 50%;
+}
+
+.order-wrapper .account-outline:nth-child(odd) {
+    border-right-color: transparent;
+}
+
+.order-wrapper .account-outline:nth-child(2n) {
+    border-left-color: transparent;
+}
+
+.order-wrapper .account-outline1:nth-child(2n) {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.form-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tabledetail {
+    margin: 0;
+    text-align: left;
+}
+
+.tabledetail th,
+.tabledetail td {
+    padding: 0px;
+    font-size: 15px;
+    min-width: 60px;
+    padding-bottom: 20px;
+    padding-right: 8px;
+    text-align: left !important;
+}
+
+
+.order-wrapper .account-outline:nth-last-child(2) {
+    border-top-color: transparent;
 }

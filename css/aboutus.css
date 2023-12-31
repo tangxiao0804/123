@@ -6,6 +6,9 @@
 
 html {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,8 +17,69 @@ body {
 
 main {
     width: 100%;
-    background: linear-gradient(200deg, white, #FFDAB9);
+    background: linear-gradient(200deg, white, #f9ebd2d2);
+    margin-top: 250px;
+}
 
+.contact {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    justify-content: space-around;
+}
+
+.usright {
+    position: relative;
+    left: -250px;
+}
+
+.map {
+    display: grid;
+}
+
+.loc,
+.phone {
+    text-align: left;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+i {
+    margin-top: 20px;
+    font-size: 20px;
+    padding-right: 6px;
+}
+
+.usright input {
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 2px 6px;
+    width: 90%;
+    background-color: transparent;
+}
+
+h3 {
+    font-size: 17px;
+    color: white;
+    padding-bottom: 100%;
+    padding: 2px 0px;
+    width: 100%;
+    text-align: left;
+    margin: 0px 16px;
+    letter-spacing: 2px;
+}
+
+.ccontent {
+    border: 1px solid #dbdbdb;
+    font-size: 16px;
+    color: white;
+    resize: none;
+    width: 400px;
+    height: 140px;
+    outline: none;
+    margin: 16px;
+    background-color: transparent;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif
 }
 
 .people {
@@ -25,7 +89,7 @@ main {
 
 .detailinfo {
     position: relative;
-    left: 300PX;
+    left: 270PX;
     display: flex;
     flex-wrap: wrap;
     width: 1400px;
@@ -85,6 +149,8 @@ main {
     top: 230px;
     transition: 0.5s;
     text-align: center;
+    font-weight: 300;
+    font-weight: bold;
 }
 
 .card:hover h1 {
@@ -99,7 +165,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 20px;
-
+    font-weight: bold;
 }
 
 .card p {
@@ -114,6 +180,11 @@ main {
 
 .contact {
     display: flex;
+    text-align: center;
+}
+
+iframe {
+    text-align: center;
 }
 
 

@@ -42,3 +42,4 @@ function add(i) {
     } else window.alert("商品數量不得超過100");
 
 }
+
