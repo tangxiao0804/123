@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Selected Rating: " + clickedIndex);
         });
     });
+
+    
+
 });
 
 //數量

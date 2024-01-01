@@ -81,7 +81,7 @@
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
                             <input type="password" placeholder="確認密碼" name="pwd">
-                            <button class="button_login submit">創建帳戶 </button>
+                            <input type="button" class="button_login submit" value="創建帳戶">
                         </form>
                     </div>
                     <div class="signin">
@@ -92,7 +92,7 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
-                            <button class="button_login submit">登入</button>
+                            <input type="button" class="button_login submit" value="登入">
                         </form>
                     </div>
                 </div>
@@ -102,19 +102,19 @@
                     <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
                         alt="1357d638624297b" border="0">
                     <p class="account">已經有帳號了嗎?</p>
-                    <button class="button_login" id="signin">登入</button>
+                    <input type="button" class="button_login" id="signin" value="登入">
                 </div>
                 <div class="rightbox">
                     <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
                     <p class="desc"> pick your perfect <span>bouquet</span></p>
                     <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
                     <p class="account">還沒有帳號嗎?</p>
-                    <button class="button_login" id="signup">註冊</button>
+                    <input type="button" class="button_login" id="signup" value="註冊">
                 </div>
             </div>
         </div>
     </div>
-    <script src="/js/login.js"></script>
+    <script src="js/login.js"></script>
 
     <div class="clearfix"></div>
 
@@ -141,17 +141,17 @@
                         <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="">新品</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">花束</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">玻璃罩</a></td>
-                                    </tr>
-                                </table>
+                                <ul class="category">
+                                    <li>
+                                        <a href="">新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="">花束</a>
+                                    </li>
+                                    <li>
+                                        <a href="">玻璃罩</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
