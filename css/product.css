@@ -40,23 +40,26 @@ nav>.page {
     top: -40px;
 }
 
-table {
-    border-collapse: collapse;
-    border: none;
-    margin: auto;
+.category {
+    list-style: none;
+    padding-left: 0;
 }
 
-tbody {
-    border: none !important;
+.category li {
+    display: block;
 }
 
 
-table a {
+.category a {
+    padding-left: 30%;
     font-size: 30px;
-    text-align: center;
-    padding: 10px;
     text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
 
+.category a:hover{
+    color: #e6ded3;
 }
 
 .accordion {

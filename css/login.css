@@ -118,6 +118,7 @@ span {
     margin: auto;
     outline: none;
     display: block;
+    width: auto !important;
 }
 
 .button_login:hover {
@@ -164,16 +165,18 @@ form {
     border-color: #c6ac9a;
 }
 
+.more-padding input,.signup input{
+    width: 65%;
+}
+
 input {
     background: #FFF;
-    width: 65%;
     color: #DBDBDB;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;
     margin: 7px;
 }
-
 input::placeholder {
     color: #f6f6f6;
     letter-spacing: 2px;
@@ -224,4 +227,8 @@ body [type=submit],
 body button {
     -webkit-appearance: initial;
     appearance: initial;
+}
+
+input::placeholder{
+    color: black;
 }
