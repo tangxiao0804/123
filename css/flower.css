@@ -1,6 +1,6 @@
 main {
     background-color: white !important;
-    height: auto;
+    height: 4300px;
     margin-top: 140px;
 }
 
@@ -27,7 +27,7 @@ main {
     width: 280px;
     height: 100px;
     border-style: solid;
-    border-color: rgb(70, 70, 70);
+    border-color: rgb(166 152 144);
     background-color: rgba(255, 255, 255, 0.713);
 
 }
@@ -37,7 +37,7 @@ main {
     position: relative;
     top: 10px;
     font-size: 50px !important;
-    color: aqua;
+    color: rgb(94, 73, 61) !important;;
     text-align: center;
 }
 
@@ -225,13 +225,16 @@ main {
 }
 
 .morebtn {
-    background-color: white;
+    background-color: #522c0187;
     padding: 0 !important;
     width: 280px;
     height: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
     font-size: 30px;
     border-radius: 50px;
     position: relative;
     text-align: center;
+    top: 160px !important;
+    left: 42.5%;
+    color: #fff;
 }
