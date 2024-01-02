@@ -290,17 +290,16 @@ main {
 }
 
 .bsname {
-    font-size: 35px;
-    text-align: left;
-    position: relative;
-    left: 15px;
+    color: #522c01;
+    font-size: 20px;
+    text-align: center;
 }
 
 .bsprice {
-    font-size: 30px;
-    text-align: left;
-    position: relative;
-    left: 15px;
+    color: #522c01;
+    font-size: 15px;
+    text-align: center;
+
 }
 
 footer {

@@ -181,3 +181,28 @@ nav a {
     width: 59px;
     height: 59px;
 }
+
+
+footer {
+    display: block;
+    color: #988946;
+    background-color: #e6ded3;
+    font-family: "Droid Serif", serif;
+    text-align: center;
+    line-height: .3;
+    height: 200px;
+    width: 100%;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+
+}
+
+.clearfix {
+    clear: both;
+}
