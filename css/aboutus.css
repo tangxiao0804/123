@@ -18,14 +18,18 @@ body {
 main {
     width: 100%;
     background: linear-gradient(200deg, white, #f9ebd2d2);
-    margin-top: 250px;
+    margin-top: 130px;
 }
 
 .contact {
+    position: relative;
+    top: 50px;
     display: flex;
     margin-bottom: 20px;
     margin-left: 150px;
     justify-content: space-around;
+    display: flex;
+    text-align: center;
 }
 
 .usright {
@@ -175,12 +179,6 @@ h3 {
     font-size: 16px;
     margin-bottom: 15px;
     line-height: 30px;
-}
-
-
-.contact {
-    display: flex;
-    text-align: center;
 }
 
 iframe {
