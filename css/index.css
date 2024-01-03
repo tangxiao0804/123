@@ -299,6 +299,7 @@ main {
     color: #522c01;
     font-size: 15px;
     text-align: center;
+    font-family: 'Times New Roman';
 
 }
 
@@ -333,4 +334,5 @@ h3 {
 
 .name {
     font-size: 23px;
+    text-align: center;
 }

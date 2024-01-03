@@ -62,7 +62,7 @@
                 </a>
             </div>
             <div class="shoppingicon">
-                <a href="shoppingcart.html">
+                <a href="hf-soppingcart.html">
                     <img src="img/icon/shopping-cart.png" class="icon1">
                 </a>
             </div>
@@ -79,8 +79,8 @@
                             <input type="text" placeholder="用戶名稱" name="id">
                             <input type="email" placeholder="電子郵件" name="mail">
                             <input type="password" placeholder="密碼" name="pwd">
-                            <input type="password" placeholder="確認密碼" name="confirm">
-                            <button class="button submit">創建帳戶 </button>
+                            <input type="password" placeholder="確認密碼" name="pwd">
+                            <input type="button" class="button_login submit" value="創建帳戶">
                         </form>
                     </div>
                     <div class="signin">
@@ -91,7 +91,7 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="remember" /><label for="remember">記住我</label>
                             </div>
-                            <button class="button submit">登入</button>
+                            <input type="button" class="button_login submit" value="登入">
                         </form>
                     </div>
                 </div>
@@ -101,21 +101,20 @@
                     <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
                         alt="1357d638624297b" border="0">
                     <p class="account">已經有帳號了嗎?</p>
-                    <button class="button" id="signin">登入</button>
+                    <input type="button" class="button_login" id="signin" value="登入">
                 </div>
                 <div class="rightbox">
                     <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
                     <p class="desc"> pick your perfect <span>bouquet</span></p>
                     <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
                     <p class="account">還沒有帳號嗎?</p>
-                    <button class="button" id="signup">註冊</button>
+                    <input type="button" class="button_login" id="signup" value="註冊">
                 </div>
             </div>
         </div>
     </div>
-    <script src="/js/login.js"></script>
+    <script src="js/login.js"></script>
 
-    <div class="clearfix"></div>
     <div class="pcontainer">
         <aside>
             <div class="center">
@@ -130,17 +129,17 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <table border="1">
-                                    <tr>
-                                        <td><a href="">聖誕限定</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">歡慶畢業</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="">浪漫首選</a></td>
-                                    </tr>
-                                </table>
+                                <ul class="category">
+                                    <li>
+                                        <a href="">聖誕限定</a>
+                                    </li>
+                                    <li>
+                                        <a href="">歡慶畢業</a>
+                                    </li>
+                                    <li>
+                                        <a href="">浪漫首選</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -164,6 +163,7 @@
                     </div>
                 </div>
             </div>
+
         </aside>
         <main class=" item">
             <!-- 產品 3*2  商品 -->
@@ -215,7 +215,7 @@
                             <div class="card-body">
                                 <h2 class="card-title">聖誕頌歌</h2>
                             </div>
-                        </a>   
+                        </a>
                     </div>
                 </div>
                 <div class="col">
@@ -253,7 +253,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html"> 
+                        <a href="hf-item.html">
                             <img src="img/flower/G03.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">後浪入海</h2>
@@ -263,7 +263,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html"> 
+                        <a href="hf-item.html">
                             <img src="img/flower/G04.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">追光</h2>
@@ -299,7 +299,7 @@
                         <a href="hf-item.html">
                             <img src="img/flower/R01.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h2 class="card-title">哈哈我</h2>
+                                <h2 class="card-title">情書</h2>
                             </div>
                         </a>
                     </div>
@@ -309,7 +309,7 @@
                         <a href="hf-item.html">
                             <img src="img/flower/R02.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h2 class="card-title">努力寫網頁</h2>
+                                <h2 class="card-title">柔情似水</h2>
                             </div>
                         </a>
                     </div>
@@ -319,7 +319,7 @@
                         <a href="hf-item.html">
                             <img src="img/flower/R03.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h2 class="card-title">結果</h2>
+                                <h2 class="card-title">維也納</h2>
                             </div>
                         </a>
                     </div>
@@ -346,10 +346,10 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item2.html">
                             <img src="img/flower/R06.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h2 class="card-title">忘記做啦QAQ</h2>
+                                <h2 class="card-title">深緋</h2>
                             </div>
                         </a>
                     </div>
@@ -357,6 +357,7 @@
             </div>
         </main>
     </div>
+
     <div class="clearfix"></div>
 
     <footer>

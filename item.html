@@ -20,7 +20,7 @@
 
 <body>
     <div class="container">
-        <div class="Product" id="page1">
+        <div class="Product">
             <div class="ptitle">
                 <div class="bigtitle">
                     <h1>Product</h1>
@@ -62,7 +62,6 @@
                             </input>
                             <input type="text" value="1" class="item_num">
                             <input type="button" value="+" class="item_button2" onclick="add(0)">
-    
                         </div>
                     </div>
                     <div class="addtocart">
@@ -77,7 +76,9 @@
                     <button class="nav-link active" id="describe-tab" data-bs-toggle="tab" data-bs-target="#describe"
                         type="button" role="tab" aria-controls="describe" aria-selected="true">描述</button>
                     <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button"
-                        role="tab" aria-controls="comment" aria-selected="false">評論</button>
+                        role="tab" aria-controls="comment" aria-selected="false">顧客評價</button>
+                    <button class="nav-link" id="wyy-tab" data-bs-toggle="tab" data-bs-target="#mycomment" type="button"
+                        role="tab" aria-controls="mycomment" aria-selected="false">我的評論</button>
                 </div>
             </nav>
             <div class="tab-content" id="myTabContent">
@@ -89,7 +90,7 @@
                     <h4>．沾附灰塵時建議以輕輕吹氣/吹塵球的方式將灰塵吹除，亦可搭配軟毛刷輕輕拂拭</h4>
                     <h4>．保存良好可維持觀賞半年~一年以上，但隨時間會慢慢出現的褪色與風化皆為正常現象喔!</h4>
                 </div>
-                <div class="tab-pane fade " id="comment" role="tabpanel" aria-labelledby="profile-tab"
+                <div class="tab-pane fade " id="mycomment" role="tabpanel" aria-labelledby="profile-tab"
                     style="transition: none;">
                     <h2 class="ttitle">發表您的評論</h2>
                     <h4>評論的產品：&nbsp;
@@ -122,6 +123,13 @@
                                 <span class="size">暱稱<br></span>
                                 <input type="text" name="nickname" id="nickname" value="帥哥">
                             </div>
+                            <span class="size"><br>評論標題<br></span>
+                            <select class="commenttype">
+                                <option>產品</option>
+                                <option>價格</option>
+                                <option>運送</option>
+                                <option>其他</option>
+                            </select>
                         </div>
                         <div class="cdetail">
                             <label for="cdetail" class="size">評論</label>
@@ -131,6 +139,32 @@
                     <div class="clearfix"></div>
                     <div class="send">
                         <input type="button" value="送出評論">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="home-tab"
+                    style="transition: none;">
+                    <div class="othercomment">
+                        <table class="octable">
+                            <thead>
+                                <tr>
+                                    <th>暱稱</th>
+                                    <th>星等</th>
+                                    <th>評論</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tcomment">
+                                <tr>
+                                    <td>心結</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>購物體驗非常出色，非常滿意！</td>
+                                </tr>
+                                <tr>
+                                    <td>GGbond</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>整體滿意，但有一些小改進空間。</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
