@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/index.css">
@@ -117,11 +117,13 @@
 
     <main>
         <div class="containnav">
-            <div class="my_icon">
-                <input type="button" value="我的資料" onclick="showPage(1)">
-            </div>
-            <div class=" history">
-                <input type="button" value="我的訂單" onclick="showPage(2)">
+            <div>
+                <div class="my_icon">
+                    <input type="button" value="我的資料" onclick="showPage(1)">
+                </div>
+                <div class=" history">
+                    <input type="button" value="我的訂單" onclick="showPage(2)">
+                </div>
             </div>
         </div>
         <div class="list-item">
@@ -207,14 +209,14 @@
                     </div>
                     <div class="tag_list">
                         <div id="tag1">
-                            <table border="0">
+                            <table class="order">
                                 <tr>
-                                    <th>訂單編號</th>
-                                    <th>日期</th>
-                                    <th>總金額</th>
-                                    <th>訂單狀態</th>
-                                    <th>出貨狀態</th>
-                                    <th>操作</th>
+                                    <th class="table-title">訂單編號</th>
+                                    <th class="table-title">日期</th>
+                                    <th class="table-title">總金額</th>
+                                    <th class="table-title">訂單狀態</th>
+                                    <th class="table-title">出貨狀態</th>
+                                    <th class="table-title">操作</th>
                                 </tr>
                                 <tr>
                                     <td>202312317414</td>
@@ -224,17 +226,7 @@
                                     </td>
                                     <td>訂單成立</td>
                                     <td>已出貨</td>
-                                    <td><input type="button" value="查看訂單" onclick="showPage(3)"></td>
-                                </tr>
-                                <tr>
-                                    <td>202401017414</td>
-                                    <td>2023/01/01 00:50:31</td>
-                                    <td>
-                                        <span class="nt-value">250</span>
-                                    </td>
-                                    <td>訂單成立</td>
-                                    <td>已出貨</td>
-                                    <td><input type="button" value="查看訂單" onclick="showPage(3)"></td>
+                                    <td><input type="button" value="查看訂單" onclick="showPage(3)" class="check"></td>
                                 </tr>
                             </table>
                         </div>
@@ -250,134 +242,135 @@
                     </div>
                 </div>
             </div>
-            <div id="page3">
-                <div class="ordertitle">
-                    <div class="col1"></div>
-                    <div class="text-center">訂單明細</div>
-                    <div class="col1"></div>
-                </div>
-                <table class="order">
-                    <thead>
-                        <tr>
-                            <th class="table-title">商品資訊</th>
-                            <th class="table-title">單價</th>
-                            <th class="table-title">數量</th>
-                            <th class="table-title">小計</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="itemdetail item-info">
-                                <div class="item-infoimg">
-                                    <img src="img/flower/FG03.jpg">
-                                </div>
-                                <div class="item-infocontent">
-                                    <div class="item-name">
-                                        名字
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="item-info">
-                                <div class="item-price">
-                                    1199
-                                </div>
-                            </td>
-                            <td class="item-info">1</td>
-                            <td class="item-info">
-                                <div class="item-price">
-                                    1199
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" class="text-right">
-                                購物車小計$1190 +物流費$0 = 總額
-                                <span class="amount">
-                                    1190
-                                </span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="order-wrapper">
-                    <div class="col1 flex">
-                        <div class="account-outline">
-                            <div class="form-title">
-                                訂單資訊
+        </div>
+        <div id="page3">
+            <div class="ordertitle">
+                <div class="col1"></div>
+                <div class="text-center">訂單明細</div>
+                <div class="col1"></div>
+            </div>
+            <table class="order">
+                <thead>
+                    <tr>
+                        <th class="table-title">商品資訊</th>
+                        <th class="table-title">單價</th>
+                        <th class="table-title">數量</th>
+                        <th class="table-title">小計</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="itemdetail item-info">
+                            <div class="item-infoimg">
+                                <img src="img/flower/FG03.jpg">
                             </div>
-                            <table class="tabledetail">
-                                <tbody>
-                                    <tr>
-                                        <th>訂單編號</th>
-                                        <td>202312317414</td>
-                                    </tr>
-                                    <tr>
-                                        <th>訂購時間</th>
-                                        <td>2023/12/31 12:19:22</td>
-                                    </tr>
-                                    <tr>
-                                        <th>訂單狀態</th>
-                                        <td>訂單成立</td>
-                                    </tr>
-                                    <tr>
-                                        <th>付款方式</th>
-                                        <td>信用卡</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="account-outline">
-                            <div class="form-title">
-                                訂購人
+                            <div class="item-infocontent">
+                                <div class="item-name">
+                                    名字
+                                </div>
                             </div>
-                            <table class="tabledetail">
-                                <tbody>
-                                    <tr>
-                                        <th>姓名</th>
-                                        <td>帥哥</td>
-                                    </tr>
-                                    <tr>
-                                        <th>手機</th>
-                                        <td>0912345678</td>
-                                    </tr>
-                                    <tr>
-                                        <th>E-mail</th>
-                                        <td>a123456@gmail.com</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="account-outline">
-                            <div class="form-title">
-                                收件資訊
+                        </td>
+                        <td class="item-info">
+                            <div class="item-price">
+                                1199
                             </div>
-                            <table class="tabledetail">
-                                <tbody>
-                                    <tr>
-                                        <th>收件方式</th>
-                                        <td>宅配</td>
-                                    </tr>
-                                    <tr>
-                                        <th>地址</th>
-                                        <td>桃園市中壢區中北路200號</td>
-                                    </tr>
-                                    <tr>
-                                        <th>收件人</th>
-                                        <td>美女</td>
-                                    </tr>
-                                    <tr>
-                                        <th>連絡電話</th>
-                                        <td>0987654321</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        </td>
+                        <td class="item-info">1</td>
+                        <td class="item-info">
+                            <div class="item-price">
+                                1199
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            購物車小計$1190 +物流費$0 = 總額
+                            <span class="amount">
+                                1190
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="order-wrapper">
+                <div class="col1 flex">
+                    <div class="account-outline">
+                        <div class="form-title">
+                            訂單資訊
                         </div>
-                        <div class="account-outline1"></div>
+                        <table class="tabledetail">
+                            <tbody>
+                                <tr>
+                                    <th>訂單編號</th>
+                                    <td>202312317414</td>
+                                </tr>
+                                <tr>
+                                    <th>訂購時間</th>
+                                    <td>2023/12/31 12:19:22</td>
+                                </tr>
+                                <tr>
+                                    <th>訂單狀態</th>
+                                    <td>訂單成立</td>
+                                </tr>
+                                <tr>
+                                    <th>付款方式</th>
+                                    <td>信用卡</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <script src="js/member.js"></script>
+                    <div class="account-outline">
+                        <div class="form-title">
+                            訂購人
+                        </div>
+                        <table class="tabledetail">
+                            <tbody>
+                                <tr>
+                                    <th>姓名</th>
+                                    <td>帥哥</td>
+                                </tr>
+                                <tr>
+                                    <th>手機</th>
+                                    <td>0912345678</td>
+                                </tr>
+                                <tr>
+                                    <th>E-mail</th>
+                                    <td>a123456@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="account-outline">
+                        <div class="form-title">
+                            收件資訊
+                        </div>
+                        <table class="tabledetail">
+                            <tbody>
+                                <tr>
+                                    <th>收件方式</th>
+                                    <td>宅配</td>
+                                </tr>
+                                <tr>
+                                    <th>地址</th>
+                                    <td>桃園市中壢區中北路200號</td>
+                                </tr>
+                                <tr>
+                                    <th>收件人</th>
+                                    <td>美女</td>
+                                </tr>
+                                <tr>
+                                    <th>連絡電話</th>
+                                    <td>0987654321</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="account-outline1"></div>
                 </div>
             </div>
         </div>
+
+        <script src="js/member.js"></script>
     </main>
     <footer>
         <div class="footerlogo">
