@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (linkText === "新品") {
-                targetPageNumber = 4;
+                targetPageNumber = 1;
             }
 
             if (linkText === "花束") {
