@@ -225,7 +225,7 @@ main {
 }
 
 .morebtn {
-    background-color: #522c0187;
+    background-color: #522c0187 !important;
     padding: 0 !important;
     width: 280px;
     height: 65px;
