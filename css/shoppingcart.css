@@ -57,22 +57,50 @@ table{
 }
 
 .check {
-  font-size: 15px;
+  font-size: 16px;
   background-color: #522c0187;
   color: #fff;
+  border: none;
+  width: 60px;
+  height: 43px;
+  letter-spacing: 3px;
+}
+
+.check:hover,
+.check2:hover {
+    background-color: #522c01a4;
+}
+
+.shopbtn {
+  position: relative;
+  left: 19.8%;
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.check2 {
+  font-size: 16px;
+  background-color: #522c0187;
+  color: #fff;
+  border: none;
+  width: 90px;
+  height: 43px;
+  letter-spacing: 3px;
 }
 
 td,th{
   padding: 20px;
 }
 
-/*  */
 .order {
   border-bottom: 1px solid;
   width: 60%;
   border-color: #dbdbdb;
   border-spacing: 2px;
   margin-bottom: 60px;
+  border-collapse: collapse;
 }
 
 .add_btn {
@@ -151,6 +179,7 @@ td,th{
 .order tr {
   border-bottom-width: 0;
   border-top: 1px solid #dbdbdb;
+  border-collapse: collapse;
 }
 
 .table-title {
@@ -258,7 +287,11 @@ tbody {
   text-align: left !important;
 }
 
-
 .order-wrapper .account-outline:nth-last-child(2) {
   border-top-color: transparent;
+}
+
+.back {
+  position: relative;
+  left: .3%;
 }

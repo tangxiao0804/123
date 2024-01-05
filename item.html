@@ -26,7 +26,6 @@
                     <h1>Product</h1>
                 </div>
                 <div class="smalltitle">
-                    <!-- 呃 就是分類 -->
                 </div>
             </div>
         </div>
@@ -65,7 +64,7 @@
                         </div>
                     </div>
                     <div class="addtocart">
-                        <input type="button" value="加入購物車" class="addcart">
+                        <input type="button" value="加入購物車" class="addcart" onclick="addCart()">
                     </div>
                 </div>
             </div>
@@ -138,7 +137,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="send">
-                        <input type="button" value="送出評論">
+                        <input type="button" value="送出評論" onclick="Comment()">
                     </div>
                 </div>
                 <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="home-tab"
@@ -147,16 +146,16 @@
                         <table class="octable">
                             <thead>
                                 <tr>
-                                    <th>暱稱</th>
-                                    <th>星等</th>
-                                    <th>評論</th>
+                                    <td>心結</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>購物體驗非常出色，非常滿意！</td>
                                 </tr>
                             </thead>
                             <tbody class="tcomment">
                                 <tr>
-                                    <td>顧客A</td>
-                                    <td>5分</td>
-                                    <td>購物體驗非常出色，非常滿意！</td>
+                                    <td>GGbond</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>整體滿意，但有一些小改進空間。</td>
                                 </tr>
                                 <tr>
                                     <td>顧客B</td>

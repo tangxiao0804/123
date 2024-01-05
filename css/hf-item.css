@@ -10,3 +10,7 @@ iframe{
     border: none; 
 }
 
+.modal{
+    --bs-modal-width: none;
+  }
+  

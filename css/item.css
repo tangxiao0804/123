@@ -141,6 +141,8 @@
   margin: auto;
   display: flex;
   margin-top: 20px;
+  position: relative;
+  left: -18px;
 }
 
 .ptitle {
@@ -229,6 +231,7 @@ font-size: 40px;
 .name>h5,
 .name>h3 {
   margin: 0;
+  font-family: 'Times New Roman';
 }
 
 .tag {
@@ -435,5 +438,9 @@ padding: 10px;
 
 .othercomment {
 margin-top: 20px;
+}
+
+.describe {
+  font-family: 'Times New Roman';
 }
 
