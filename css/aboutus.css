@@ -17,7 +17,8 @@ body {
 
 main {
     width: 100%;
-    background: linear-gradient(200deg, white, #f9ebd2d2);
+    height: 1600px;
+    background: linear-gradient(180deg, #e6ded3, #fbf7f1d2, #e6ded3);
     margin-top: 130px;
 }
 
@@ -30,6 +31,16 @@ main {
     justify-content: space-around;
     display: flex;
     text-align: center;
+}
+
+.btn {
+    background-color: #522c0187;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #522c01a4;
+    color: #fff;
 }
 
 .usright {
@@ -55,26 +66,25 @@ i {
 }
 
 .usright input {
-    border: 1px solid #dbdbdb;
+    border: 1px solid #fff;
     outline: none;
     padding: 2px 6px;
     width: 90%;
-    background-color: transparent;
+    background-color:#fff;
 }
 
-h3 {
-    font-size: 17px;
-    color: white;
+.tellus {
+    font-size: 24px;
+    color: #522c01;
     padding-bottom: 100%;
     padding: 2px 0px;
-    width: 100%;
-    text-align: left;
+    width: 90%;    text-align: left;
     margin: 0px 16px;
     letter-spacing: 2px;
 }
 
 .ccontent {
-    border: 1px solid #dbdbdb;
+    border: 1px solid #fff;
     font-size: 16px;
     color: white;
     resize: none;
@@ -82,7 +92,7 @@ h3 {
     height: 140px;
     outline: none;
     margin: 16px;
-    background-color: transparent;
+    background-color: #fff;
     font-family: 'EB Garamond', 'Noto Serif TC', serif
 }
 
@@ -93,11 +103,11 @@ h3 {
 
 .detailinfo {
     position: relative;
+    top: 50px;
     left: 270PX;
     display: flex;
     flex-wrap: wrap;
     width: 1400px;
-
 }
 
 .card {
@@ -105,7 +115,7 @@ h3 {
     width: 400px;
     height: 410px;
     margin: 20px;
-    background-color: #FFEFD5;
+    background-color: #ffdfab;
     border-radius: 20px;
     overflow: hidden;
     display: flex;

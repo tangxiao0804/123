@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100%;
+}
+
 .pcontainer {
     display: block;
     height: 1300px;
@@ -15,6 +19,10 @@ aside {
     width: 35%;
     float: left;
     display: block;
+}
+
+.modal{
+    --bs-modal-width: none;
 }
 
 .item {

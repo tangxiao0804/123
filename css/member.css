@@ -1,11 +1,11 @@
 main {
-    background-color: white !important;
+    background-color: #fff;
     width: 100%;
     height: 1300px;
 }
 
 .containnav{
-    margin-top: 140px;
+    margin-top: 160px;
     display: flex;
     justify-content: center;
 }
@@ -164,6 +164,7 @@ a {
 
 .list-item{
     width: 100%;
+    padding-top: 10px;
 }
 
 .list-item > div {
@@ -201,11 +202,14 @@ table{
     color: #fff;
 }
 
+.check:hover {
+    background-color: #522c01a4;
+}
+
 td,th{
     padding: 20px;
 }
 
-/*  */
 .order {
     border-bottom: 1px solid;
     width: 60%;
@@ -353,7 +357,11 @@ tbody {
     text-align: left !important;
 }
 
-
 .order-wrapper .account-outline:nth-last-child(2) {
     border-top-color: transparent;
+}
+
+.none {
+    text-align: center;
+    color: #6a6a6a;
 }
