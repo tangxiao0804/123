@@ -47,7 +47,7 @@ main {
   text-align: center;
 }
 
-.detail, .price, .amount, .total {
+.detail, .price{
   border-right: 2px solid black;
 }
 
@@ -108,7 +108,7 @@ td,th{
   width: 60%;
   border-color: #dbdbdb;
   border-spacing: 2px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -246,6 +246,7 @@ tbody {
 
 .amount {
   color: #a35e47 !important;
+  border-right: none;
 }
 
 .order-wrapper {
@@ -323,5 +324,9 @@ tbody {
   font-size: 13px;
   letter-spacing: 2px;
   text-decoration:none;
-  border-right:none !important;
+}
+
+.dinfo {
+  display: flex;
+  width: auto;
 }
