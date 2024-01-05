@@ -70,7 +70,6 @@ i {
     outline: none;
     padding: 2px 6px;
     width: 90%;
-    background-color:#fff;
 }
 
 .tellus {
@@ -86,7 +85,7 @@ i {
 .ccontent {
     border: 1px solid #fff;
     font-size: 16px;
-    color: white;
+    color: black;
     resize: none;
     width: 400px;
     height: 140px;
