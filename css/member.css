@@ -365,3 +365,9 @@ tbody {
     text-align: center;
     color: #6a6a6a;
 }
+
+input:focus {   
+    border-bottom: 1.2px solid rgba(206, 125, 136, 0.7);
+    font-size: 1em;
+    transition: 0.8s all ease;
+}

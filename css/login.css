@@ -168,27 +168,20 @@ form {
     width: 65%;
 }
 
-input {
+input{
     background: #FFF;
-    color: #DBDBDB;
+    color: black;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;
     margin: 7px;
 }
+
 input::placeholder {
     color: #f6f6f6;
     letter-spacing: 2px;
     font-size: 1.3em;
     font-weight: 100;
-}
-
-input:focus {
-    color: #ce7d88;
-    outline: none;
-    border-bottom: 1.2px solid rgba(206, 125, 136, 0.7);
-    font-size: 1em;
-    transition: 0.8s all ease;
 }
 
 input:focus::placeholder {
