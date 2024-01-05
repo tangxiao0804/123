@@ -1,7 +1,13 @@
 html {
-    max-width: 80%;
     margin: auto;
     align-items: center;
+}
+
+.text-center {
+    font-size: 30px;
+    color: #522c01;
+    font-family: "Droid Serif", serif;
+    letter-spacing: 0;
 }
 
 .header,
@@ -13,212 +19,7 @@ html {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-}
-
-.header {
-    grid-area: 1 / 1 / 2 / 9;
-}
-
-.item {
-    grid-area: 2 / 1 / 4 / 9;
-}
-
-.title {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "detail detail detail detail price amount total delete";
-    grid-area: 2 / 1 / 3 / 9;
-}
-
-.detail {
-    grid-area: detail;
-}
-
-.price {
-    grid-area: price;
-}
-
-.amount {
-    grid-area: amount;
-}
-
-.total {
-    grid-area: total;
-}
-
-.delete {
-    grid-area: delete;
-}
-
-.item1 {
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "item1_detail item1_detail item1_detail item1_detail item1_price item1_amount item1_total item1_delete"
-        "item1_detail item1_detail item1_detail item1_detail item1_price item1_amount item1_total item1_delete"
-        "item1_detail item1_detail item1_detail item1_detail item1_price item1_amount item1_total item1_delete";
-    grid-area: 3 / 1 / 4 / 9;
-}
-
-.item1_price {
-    grid-area: item1_price;
-}
-
-.item1_amount {
-    grid-area: item1_amount;
-}
-
-.item1_total {
-    grid-area: item1_total;
-}
-
-.item1_delete {
-    grid-area: item1_delete;
-}
-
-.item1_detail {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . . ."
-        "img img text text"
-        "img img text text"
-        ". . . .";
-    grid-area: item1_detail;
-}
-
-.img1 {
-    grid-area: img;
-}
-
-.text1 {
-    grid-area: text;
-    display: flex;
-    align-items: center;
-}
-
-.item2 {
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "item2_detail item2_detail item2_detail item2_detail item2_price item2_amount item2_total item2_delete"
-        "item2_detail item2_detail item2_detail item2_detail item2_price item2_amount item2_total item2_delete"
-        "item2_detail item2_detail item2_detail item2_detail item2_price item2_amount item2_total item2_delete";
-    grid-area: 4 / 1 / 5 / 9;
-}
-
-.item2_detail {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . . ."
-        "img img text text"
-        "img img text text"
-        ". . . .";
-    grid-area: item2_detail;
-}
-
-.img2 {
-    grid-area: img;
-}
-
-.text2 {
-    grid-area: text;
-    display: flex;
-    align-items: center;
-}
-
-.item2_price {
-    grid-area: item2_price;
-}
-
-.item2_amount {
-    grid-area: item2_amount;
-}
-
-.item2_total {
-    grid-area: item2_total;
-}
-
-.item2_delete {
-    grid-area: item2_delete;
-}
-
-.item3 {
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "item3_detail item3_detail item3_detail item3_detail item3_price item3_amount item3_total item3_delete"
-        "item3_detail item3_detail item3_detail item3_detail item3_price item3_amount item3_total item3_delete"
-        "item3_detail item3_detail item3_detail item3_detail item3_price item3_amount item3_total item3_delete";
-    grid-area: 5 / 1 / 6 / 9;
-}
-
-.item3_detail {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . . ."
-        "img img text text"
-        "img img text text"
-        ". . . .";
-    grid-area: item3_detail;
-}
-
-.img3 {
-    grid-area: img;
-}
-
-.text3 {
-    grid-area: text;
-    display: flex;
-    align-items: center;
-}
-
-.item3_price {
-    grid-area: item3_price;
-}
-
-.item3_amount {
-    grid-area: item3_amount;
-}
-
-.item3_total {
-    grid-area: item3_total;
-}
-
-.item3_delete {
-    grid-area: item3_delete;
+    padding-top: 110px;
 }
 
 .item {
@@ -232,6 +33,11 @@ html {
     border-bottom: 2px solid black;
 }
 
+.item1_amount {
+    display: flex;
+    text-align: center;
+}
+
 .detail,
 .price,
 .amount,
@@ -239,17 +45,264 @@ html {
     border-right: 2px solid black;
 }
 
-.item_num {
-    width: 30px;
-    border: none;
-    text-align: center;
-}
-
-
 img {
     max-width: 50%;
 }
 
 .trash {
     max-width: 15%;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.check {
+    font-size: 16px;
+    background-color: #522c0187;
+    color: #fff;
+    border: none;
+    width: 60px;
+    height: 43px;
+    letter-spacing: 3px;
+}
+
+.check:hover,
+.check2:hover {
+    background-color: #522c01a4;
+}
+
+.shopbtn {
+    position: relative;
+    left: 19.8%;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check2 {
+    font-size: 16px;
+    background-color: #522c0187;
+    color: #fff;
+    border: none;
+    width: 90px;
+    height: 43px;
+    letter-spacing: 3px;
+}
+
+
+td,
+th {
+    padding: 20px;
+}
+
+/*  */
+.order {
+    border-bottom: 1px solid;
+    width: 60%;
+    border-color: #dbdbdb;
+    border-spacing: 2px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.add_btn {
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.item_num {
+    text-align: center;
+    width: 84px;
+    height: 50px;
+    font-size: 25px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.item_button1,
+.item_button2 {
+    margin-bottom: 0;
+    font-weight: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    width: 54px;
+    height: 54px;
+    font-size: 35px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.item_button1 {
+    border-radius: 4px 0 0 4px;
+}
+
+.ordertitle {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 24px;
+    padding-top: 30px;
+}
+
+.col1 {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    height: 0;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+}
+
+.text {
+    text-align: center;
+}
+
+.order tr:first-child {
+    border-top-width: 0;
+}
+
+.order tr {
+    border-bottom-width: 0;
+    border-top: 1px solid #dbdbdb;
+    border-collapse: collapse;
+}
+
+.table-title {
+    background-color: #fafafa;
+    border-bottom: 1px solid #dbdbdb;
+    color: rgba(66, 66, 66, .6);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table-account .table-content {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.itemdetail {
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.item-infoimg {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.item-infoimg img {
+    max-width: 80px;
+    width: 80px;
+}
+
+.item-price:only-child {
+    color: #424242;
+    text-decoration: unset;
+}
+
+.item-price:before {
+    content: "NT$";
+}
+
+.text-right {
+    text-align: right;
+    border-bottom: 0;
+    font-size: 13px;
+}
+
+.amount::before {
+    content: "NT$";
+}
+
+.amount {
+    color: #a35e47 !important;
+}
+
+.order-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.account-outline,
+.account-outline1 {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    padding: 24px 15px;
+    height: 250px;
+    width: 50%;
+}
+
+.order-wrapper .account-outline:nth-child(odd) {
+    border-right-color: transparent;
+}
+
+.order-wrapper .account-outline:nth-child(2n) {
+    border-left-color: transparent;
+}
+
+.order-wrapper .account-outline1:nth-child(2n) {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.form-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tabledetail {
+    margin: 0;
+    text-align: left;
+}
+
+.tabledetail th,
+.tabledetail td {
+    padding: 0px;
+    font-size: 15px;
+    min-width: 60px;
+    padding-bottom: 20px;
+    padding-right: 8px;
+    text-align: left !important;
+}
+
+
+.order-wrapper .account-outline:nth-last-child(2) {
+    border-top-color: transparent;
+}
+
+.back {
+    position: relative;
+    left: .3%;
 }

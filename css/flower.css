@@ -243,3 +243,8 @@ main {
     left: 42.5%;
     color: #fff;
 }
+
+.morebtn:hover {
+    background-color: #522c01a4;
+    color: #fff;
+}
