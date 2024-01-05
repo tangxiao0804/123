@@ -178,10 +178,18 @@ input{
 }
 
 input::placeholder {
-    color: #f6f6f6;
+    color: #000;;
     letter-spacing: 2px;
     font-size: 1.3em;
     font-weight: 100;
+}
+
+input:focus {
+    color: #5d5d5d;
+    outline: none;
+    border-bottom: 1.2px solid rgba(206, 125, 136, 0.7);
+    font-size: 1em;
+    transition: 0.8s all ease;
 }
 
 input:focus::placeholder {
@@ -209,7 +217,7 @@ input[type=checkbox] {
 }
 
 .checkbox input[type=checkbox]:checked+label {
-    color: #ce7d88;
+    color: #5d5d5d;
     transition: 0.5s all ease;
 }
 
