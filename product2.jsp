@@ -1,3 +1,5 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%@page contentType="text/html;charset=utf-8" language="java" import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,91 +32,8 @@
 
 <body>
     <header>
-        <div class="logohead">
-            <div class="logopic">
-                <a href="index.html">
-                    <img src="img/logo/logo.png" style="width: 100%;">
-                </a>
-            </div>
-        </div>
-        <nav>
-            <a href="index.html">首&nbsp&nbsp頁</a>
-            <div class="itemlist">
-                <div class="dropdown">
-                    <a href="product.html">初栖選品</a>
-                </div>
-            </div>
-            <a href="flower.html">鮮花故事</a>
-            <a href="aboutus.html">關於我們</a>
-            <a href="member.html">會員中心</a>
-        </nav>
-        <div class="head3">
-            <div class="flexbox">
-                <div class="search">
-                    <div>
-                        <input type="text" placeholder="尋找產品" required>
-                    </div>
-                </div>
-            </div>
-            <div class="loginicon">
-                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <img src="img/icon/account.png" class="icon">
-                </a>
-            </div>
-            <div class="shoppingicon">
-                <a href="hf-soppingcart.html">
-                    <img src="img/icon/shopping-cart.png" class="icon1">
-                </a>
-            </div>
-
-        </div>
+        <%@include file="header.jsp"%>
     </header>
-
-    <div class="container modal fade" id="loginModal">
-        <div class="welcome modal-dialog">
-            <div class="modal-content">
-                <div class="pinkbox">
-                    <div class="signup nodisplay">
-                        <h1>註冊</h1>
-                        <form autocomplete="off" method="get" action="">
-                            <input type="text" placeholder="用戶名稱" name="id">
-                            <input type="email" placeholder="電子郵件" name="mail">
-                            <input type="password" placeholder="密碼" name="pwd">
-                            <input type="password" placeholder="確認密碼" name="pwd">
-                            <input type="button" class="button_login submit" value="創建帳戶">
-                        </form>
-                    </div>
-                    <div class="signin">
-                        <h1>登入</h1>
-                        <form class="more-padding" autocomplete="off" method="get" action="">
-                            <input type="text" placeholder="用戶名稱" name="id">
-                            <input type="password" placeholder="密碼" name="pwd">
-                            <div class="checkbox">
-                                <input type="checkbox" id="remember" /><label for="remember">記住我</label>
-                            </div>
-                            <input type="button" class="button_login submit" value="登入">
-                        </form>
-                    </div>
-                </div>
-                <div class="leftbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc">pick your perfect <span>bouquet</span></p>
-                    <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
-                        alt="1357d638624297b" border="0">
-                    <p class="account">已經有帳號了嗎?</p>
-                    <input type="button" class="button_login" id="signin" value="登入">
-                </div>
-                <div class="rightbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc"> pick your perfect <span>bouquet</span></p>
-                    <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
-                    <p class="account">還沒有帳號嗎?</p>
-                    <input type="button" class="button_login" id="signup" value="註冊">
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/login.js"></script>
 
     <div class="clearfix"></div>
 
@@ -172,7 +91,7 @@
             <div class="row row-cols-1 row-cols-3 list-item" id="page1">
                 <div class="col">
                     <div class="card h-100 ">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN04.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">哈哈我</h2>
@@ -182,7 +101,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN02.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">努力寫網頁</h2>
@@ -192,7 +111,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN03.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">結果</h2>
@@ -202,7 +121,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN01.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">岩海之戀</h2>
@@ -212,7 +131,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN05.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">仲夏夜夢</h2>
@@ -222,7 +141,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FN06.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">忘記做啦QAQ</h2>
@@ -235,7 +154,7 @@
             <div class="row row-cols-1 row-cols-3 list-item" id="page2">
                 <div class="col">
                     <div class="card h-100 ">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF01.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">淺談花語</h2>
@@ -245,7 +164,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF02.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">粉色愛戀</h2>
@@ -255,7 +174,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF03.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">優雅薰香</h2>
@@ -265,7 +184,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF04.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">天空之吻</h2>
@@ -275,7 +194,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF05.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">夜空星辰</h2>
@@ -285,7 +204,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FF06.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">淡雅花章</h2>
@@ -298,7 +217,7 @@
             <div class="row row-cols-1 row-cols-3 list-item" id="page3">
                 <div class="col">
                     <div class="card h-100 ">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG01.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">春天</h2>
@@ -308,7 +227,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG02.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">北極</h2>
@@ -318,7 +237,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG03.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">秘密</h2>
@@ -328,7 +247,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG04.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">永不止息</h2>
@@ -338,7 +257,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG05.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">禮物</h2>
@@ -348,7 +267,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <a href="hf-item.html">
+                        <a href="hf-item.jsp">
                             <img src="img/flower/FG06.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h2 class="card-title">蔚藍大海</h2>

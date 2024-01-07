@@ -23,12 +23,11 @@ main {
 }
 
 .contact {
+    width: auto;
     position: relative;
     top: 50px;
-    display: flex;
     margin-bottom: 20px;
     margin-left: 150px;
-    justify-content: space-around;
     display: flex;
     text-align: center;
 }
@@ -45,11 +44,13 @@ main {
 
 .usright {
     position: relative;
-    left: -250px;
+    left: 15rem;
 }
 
 .map {
     display: grid;
+    position: relative;
+    left: 10rem;
 }
 
 .loc,
@@ -77,7 +78,8 @@ i {
     color: #522c01;
     padding-bottom: 100%;
     padding: 2px 0px;
-    width: 90%;    text-align: left;
+    width: 90%;
+    text-align: left;
     margin: 0px 16px;
     letter-spacing: 2px;
 }
@@ -114,7 +116,7 @@ i {
     width: 400px;
     height: 410px;
     margin: 20px;
-    background-color: #b8ab97;
+    background-color: #ffdfab;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -205,4 +207,35 @@ h3 {
 
 .clearfix {
     clear: both;
+}
+
+@media screen and (max-width: 400px) {
+
+    main {
+        width: 400%;
+    }
+
+    .head3 {
+        position: relative;
+        right: -15%;
+    }
+
+    footer {
+        width: 400%;
+    }
+
+    .map {
+        position: relative;
+        left: -3%;
+    }
+
+    .people {
+        position: relative;
+        left: -12%;
+    }
+
+    .usright {
+        position: relative;
+        left: 5%;
+    }
 }

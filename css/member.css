@@ -172,7 +172,6 @@ a {
 }
 
 input{
-    background: transparent !important;
     width: 100px;
     color: black;
 }
@@ -199,7 +198,7 @@ table{
 }
 
 .check {
-    background-color: #522c0187 !important;
+    background-color: #522c0187;
     color: #fff;
 }
 
@@ -254,6 +253,7 @@ td,th{
 }
 
 .table-title {
+    background-color: #fafafa;
     border-bottom: 1px solid #dbdbdb;
     color: rgba(66, 66, 66, .6);
     padding: 10px 15px;

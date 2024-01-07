@@ -1,6 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%@page contentType="text/html;charset=utf-8" language="java" import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="en">
-
+<%
+    Class.forName("com.mysql.jdbc.Driver");
+    String url="jdbc:mysql://localhost/?serverTimezone=UTC";
+    Connection con=DriverManager.getConnection(url,"root","1234");
+    String sql="USE `newschema`";
+    con.createStatement().execute(sql);
+    %>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,31 +34,38 @@
                     <h1>Product</h1>
                 </div>
                 <div class="smalltitle">
-                    <!-- 呃 就是分類 -->
                 </div>
             </div>
         </div>
         <div class="box">
+		 <%
+					sql = "SELECT * FROM newschema.product where id = 2";                    ;
+					ResultSet tmp =  con.createStatement().executeQuery(sql);                 
+					while(tmp.next())
+					{			
+				%>
             <div class="leftbox">
                 <div class="picture">
-                    <img src="img/flower/S02.jpg" alt="" width="75%">
+                    <img src="<%=tmp.getString(2)%>" alt="" width="75%">
                 </div>
             </div>
             <div class="rightbox">
                 <div class="name">
-                    <h5>多肉植物</h5>
-                    <h3>金盛丸</h3>
+				
+                    <h5><%=tmp.getString(4)%></h5>
+                    <h3><%=tmp.getString(3)%></h3>
                 </div>
                 <div class="rate">
                     <div class="bstar">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
                     <div class="star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
                 </div>
                 <div class="promotion">
+                    <p class="ptag">庫存數量:<%=tmp.getString(6)%></p>
                     <p class="ptag">購買即贈空白卡片一張</p>
                     <p class="ptag">全館滿3000免運</p>
                 </div>
                 <div class="price">
-                    <span class="nt-value">350</span>
+                    <span class="nt-value"><%=tmp.getString(5)%></span>
                 </div>
                 <div class="buy">
                     <div class="buy1">
@@ -65,10 +80,13 @@
                         </div>
                     </div>
                     <div class="addtocart">
-                        <input type="button" value="加入購物車" class="addcart">
+                        <input type="button" value="加入購物車" class="addcart" onclick="addCart()">
                     </div>
                 </div>
             </div>
+			<%
+					}
+    %>
         </div>
         <div class="tag">
             <nav>
@@ -85,15 +103,16 @@
                 <div class="tab-pane fade show active" id="describe" role="tabpanel" aria-labelledby="home-tab"
                     style="transition: none;">
                     <h4>保存方式:</h4>
-                    <h4>．多肉植物不適合積水生長，故不建議使用盆底未開孔的任何盆器種植，建議使用淺、寬的形狀的盆器更好的管控水份</h4>
-                    <h4>．收到植物可以直接種入盆土中，入盆後建議相隔1-2天再澆水，防止植物因入盆根系些微損傷未結痂前，而造成的箘害。</h4>
-                    <h4>．任何植物在面臨環境改變時，都會面臨衝擊而需要一段適應期，建議給植物相對穩定溫和的環境來適應有可能發生的衝擊(例如：避免直射陽光、供給高頻率的水份)。</h4>
+                    <h4>．建議放置陰涼通風處，避免潮濕、悶熱、陽光直射的環境</h4>
+                    <h4>．花材較為脆弱，盡量避免碰撞與擠壓</h4>
+                    <h4>．沾附灰塵時建議以輕輕吹氣/吹塵球的方式將灰塵吹除，亦可搭配軟毛刷輕輕拂拭</h4>
+                    <h4>．保存良好可維持觀賞半年~一年以上，但隨時間會慢慢出現的褪色與風化皆為正常現象喔!</h4>
                 </div>
                 <div class="tab-pane fade " id="mycomment" role="tabpanel" aria-labelledby="profile-tab"
                     style="transition: none;">
                     <h2 class="ttitle">發表您的評論</h2>
                     <h4>評論的產品：&nbsp;
-                        <span>金盛丸</span>
+                        <span>聖誕頌歌</span>
                     </h4>
                     <div class="myrate">
                         <div class="quality">
@@ -137,7 +156,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="send">
-                        <input type="button" value="送出評論">
+                        <input type="button" value="送出評論" onclick="Comment()">
                     </div>
                 </div>
                 <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="home-tab"
@@ -146,20 +165,16 @@
                         <table class="octable">
                             <thead>
                                 <tr>
-                                    <th>暱稱</th>
-                                    <th>星等</th>
-                                    <th>評論</th>
+                                    <td>心結</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>購物體驗非常出色，非常滿意！</td>
                                 </tr>
                             </thead>
                             <tbody class="tcomment">
                                 <tr>
-                                    <td>園藝阿嬤</td>
-                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
-                                    <td>盆栽很可愛</td>
-                                </tr>
-                                <tr>
-                                    <td>小美</td>
-                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>GGbond</td>
+                                    <td>&#x2605;&#x2605;&#x2605;&#x2605;</td>
+                                    <td>整體滿意，但有一些小改進空間。</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -174,40 +189,40 @@
                     <div class="litem">
                         <div class="pic">
                             <a href="hf-item.html">
-                                <img src="img/flower/S06.jpg" alt="">
+                                <img src="img/flower/C02.jpg" alt="">
                             </a>
                         </div>
                         <div class="detail2">
-                            <div class="describe">耳墜草</div>
+                            <div class="describe">冬日來信</div>
                         </div>
                         <div class="detail2">
-                            <div class="describe">NT$500</div>
+                            <div class="describe">NT$1,380</div>
                         </div>
                     </div>
                     <div class="litem">
                         <div class="pic">
                             <a href="hf-item.html">
-                                <img src="img/flower/S04.jpg" alt="">
+                                <img src="img/flower/C03.jpg" alt="">
                             </a>
                         </div>
                         <div class="detail2">
-                            <div class="describe">卡蘿拉</div>
+                            <div class="describe">平安夜</div>
                         </div>
                         <div class="detail2">
-                            <div class="describe">NT$450</div>
+                            <div class="describe">NT$1,080</div>
                         </div>
                     </div>
                     <div class="litem">
                         <div class="pic">
                             <a href="hf-item.html">
-                                <img src="img/flower/S01.jpg" alt="">
+                                <img src="img/flower/C06.jpg" alt="">
                             </a>
                         </div>
                         <div class="detail2">
-                            <div class="describe">蘆薈</div>
+                            <div class="describe">蘋蘋安安</div>
                         </div>
                         <div class="detail2">
-                            <div class="describe">NT$200</div>
+                            <div class="describe">NT$1,280</div>
                         </div>
                     </div>
                 </div>

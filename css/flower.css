@@ -1,5 +1,5 @@
 main {
-    background: white !important;
+    background-color: white !important;
     height: 4300px;
     margin-top: 140px;
 }
@@ -37,8 +37,7 @@ main {
     position: relative;
     top: 10px;
     font-size: 50px !important;
-    color: rgb(94, 73, 61) !important;
-    ;
+    color: rgb(94, 73, 61) !important;;
     text-align: center;
 }
 
@@ -226,7 +225,7 @@ main {
 }
 
 .morebtn {
-    background-color: #522c0187 !important;
+    background-color: #522c0187;
     padding: 0 !important;
     width: 280px;
     height: 65px;
@@ -237,7 +236,7 @@ main {
     text-align: center;
     top: 160px !important;
     left: 42.5%;
-    color: #fff !important;
+    color: #fff;
 }
 
 .morebtn:hover {

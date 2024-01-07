@@ -32,9 +32,10 @@ header a {
 }
 
 nav {
+    width: auto;
     position: relative;
     top: -30px;
-    left: 450px;
+    left: 20%;
     display: flex;
     height: 20px;
 }
@@ -91,11 +92,11 @@ nav a {
 }
 
 .head3 {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 0;
+    right: -30%;
 }
 
 .loginicon,
@@ -205,4 +206,16 @@ h3 {
 
 .clearfix {
     clear: both;
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        position: relative;
+        left: 15%;
+    }
+
+    .head3 {
+        position: relative;
+        right: -15%;
+    }
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購物車</title>
+  <link rel="stylesheet" href="css/shoppingcart.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>購物車</h1>
+    </div>
+    <div class="item">
+      <div class="title">
+        <div class="detail">
+          <h3>商品</h3>
+        </div>
+        <div class="price">
+          <h3>價錢</h3>
+        </div>
+        <div class="amount">
+          <h3>數量</h3>
+        </div>
+        <div class="total">
+          <h3>總計</h3>
+        </div>
+        <div class="delete"></div>
+      </div>
+      <div class="item1">
+        <div class="item1_detail">
+          <div class="img1">
+            <img src="img/flower/R02.jpg" alt="">
+          </div>
+          <div class="text1">花花名</div>
+        </div>
+        <div class="item1_price">$100</div>
+        <div class="item1_amount">
+          <div class="add_minus">
+            <input type="button" value="-" class="item_button" onclick="minus(0)">
+            <input type="text" value="1" class="item_num">
+            <input type="button" value="+" class="item_button" onclick="add(0)">
+          </div>
+        </div>
+        <div class="item1_total">價錢</div>
+        <div class="item1_delete">
+          <button><img src="img/icon/trash.png" class="trash"></button>
+        </div>
+      </div>
+
+      <div class="item2">
+        <div class="item2_detail">
+          <div class="img2">
+            <img src="img/flower/R04.jpg" alt="">
+          </div>
+          <div class="text2">花花名2</div>
+        </div>
+        <div class="item2_price">$104</div>
+        <div class="item2_amount">
+          <div class="add_minus">
+            <input type="button" value="-" class="item_button" onclick="minus(0)">
+            <input type="text" value="1" class="item_num">
+            <input type="button" value="+" class="item_button" onclick="add(0)">
+          </div>
+        </div>
+        <div class="item2_total">$200</div>
+        <div class="item2_delete">
+          <button><img src="img/icon/trash.png" class="trash"></button>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="item3_detail">
+          <div class="img3">
+            <img src="img/flower/R03.jpg" alt="">
+          </div>
+          <div class="text3">花花名3</div>
+        </div>
+        <div class="item3_price">$123
+        </div>
+        <div class="item3_amount">
+          <div class="add_minus">
+            <input type="button" value="-" class="item_button" onclick="minus(0)">
+            <input type="text" value="1" class="item_num">
+            <input type="button" value="+" class="item_button" onclick="add(0)">
+          </div>
+        </div>
+        <div class="item3_total">$350</div>
+        <div class="item3_delete">
+          <button onclick="alert()"><img src="img/icon/trash.png" class="trash"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/shopping.js"></script>
+  </div>
+  <div class="back">
+    <input type="button" onclick="history.back()" value="回到上一頁"></input>
+  </div>
+  <footer>
+    <div class="footerlogo">
+        <img src="img/logo/logo.png" style="width: 150px;">
+        <br>
+        <h3 class="name">初栖 Seventh Day</h3>
+        <br>
+        copyright © 2023 All Seventh Day
+</footer>
+</body>

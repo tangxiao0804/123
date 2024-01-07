@@ -46,13 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (linkText === "玻璃罩") {
                 targetPageNumber = 3;
             }
-
             showPage(targetPageNumber);
         });
-    });
-
-    document.getElementById('p7').addEventListener('click', function () {
-        showPage(7);
     });
 });
 
@@ -78,6 +73,5 @@ function redirectToOtherPage(num) {
     }
 
 }
-
 
 
