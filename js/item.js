@@ -43,3 +43,10 @@ function add(i) {
 
 }
 
+function Comment() {
+    window.alert("已送出評論");
+}
+
+function addCart() {
+    window.alert("已加入購物車");
+}

@@ -134,7 +134,6 @@ span {
     border: solid 1px #ead2c7;
 }
 
-/* form styling */
 form {
     display: flex;
     align-items: center;
@@ -165,14 +164,13 @@ form {
     border-color: #c6ac9a;
 }
 
-.more-padding input,
-.signup input {
+.more-padding input,.signup input{
     width: 65%;
 }
 
-input {
+input{
     background: #FFF;
-    color: #DBDBDB;
+    color: black;
     border: none;
     border-bottom: 1px solid rgba(246, 246, 246, 0.5);
     padding: 9px;
@@ -180,18 +178,10 @@ input {
 }
 
 input::placeholder {
-    color: #000000;
+    color: #f6f6f6;
     letter-spacing: 2px;
     font-size: 1.3em;
     font-weight: 100;
-}
-
-input:focus {
-    color: #5d5d5d;
-    outline: none;
-    border-bottom: 1.2px solid rgba(206, 125, 136, 0.7);
-    font-size: 1em;
-    transition: 0.8s all ease;
 }
 
 input:focus::placeholder {
@@ -219,7 +209,7 @@ input[type=checkbox] {
 }
 
 .checkbox input[type=checkbox]:checked+label {
-    color: #5d5d5d;
+    color: #ce7d88;
     transition: 0.5s all ease;
 }
 
@@ -231,6 +221,6 @@ body button {
     appearance: initial;
 }
 
-input::placeholder {
+input::placeholder{
     color: black;
 }

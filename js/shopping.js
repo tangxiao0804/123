@@ -13,6 +13,9 @@ function add(i) {
   } else window.alert("商品數量不得超過100");
 
 }
-function alert() {
-  window.alert("123");
+
+function backToMember() {
+  window.alert("已完成結帳\n(按下確認後將跳回會員頁)");
+
+  window.location.href = "member.html";
 }

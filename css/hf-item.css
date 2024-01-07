@@ -1,10 +1,15 @@
-.container-fluid {
+.container-fluid{
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-iframe {
-    height: 2000px;
+iframe{
+    height: 2000px;;
     width: 100%;
-    overflow: visible;
+    overflow: auto;
+    border: none; 
+}
+
+.modal{
+    --bs-modal-width: none;
 }

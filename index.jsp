@@ -1,6 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%@page contentType="text/html;charset=utf-8" language="java" import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="en">
-
+    <%
+    Class.forName("com.mysql.jdbc.Driver");
+    String url="jdbc:mysql://localhost/?serverTimezone=UTC";
+    Connection con=DriverManager.getConnection(url,"root","1234");
+    String sql="USE `newschema`";
+    con.createStatement().execute(sql);
+    %>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,98 +30,8 @@
 
 <body>
     <header>
-        <div class="logohead">
-            <div class="logopic">
-                <a href="index.html">
-                    <img src="img/logo/logo.png" style="width: 100%;">
-                </a>
-            </div>
-        </div>
-        <nav>
-            <a href="index.html">首&nbsp&nbsp頁</a>
-            <div class="itemlist">
-                <div class="dropdown">
-                    <div class="dropbtn">
-                        <a href="product.html">初栖選品</a>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="product.html#collapseOne">鮮花</a>
-                        <a href="product2.html#collapseTwo">永生花</a>
-                        <a href="product3.html">多肉植物</a>
-                    </div>
-                </div>
-            </div>
-            <a href="flower.html">鮮花故事</a>
-            <a href="aboutus.html">關於我們</a>
-            <a href="member.html">會員中心</a>
-        </nav>
-        <div class="head3">
-            <div class="flexbox">
-                <div class="search">
-                    <div>
-                        <input type="text" placeholder="尋找產品" required>
-                    </div>
-                </div>
-            </div>
-            <div class="loginicon">
-                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <img src="img/icon/account.png" class="icon">
-                </a>
-            </div>
-            <div class="shoppingicon">
-                <a href="hf-soppingcart.html">
-                    <img src="img/icon/shopping-cart.png" class="icon1">
-                </a>
-            </div>
-
-        </div>
+        <%@ include file="header.jsp"%>
     </header>
-
-    <div class="container modal fade" id="loginModal">
-        <div class="welcome modal-dialog">
-            <div class="modal-content">
-                <div class="pinkbox">
-                    <div class="signup nodisplay">
-                        <h1>註冊</h1>
-                        <form autocomplete="off" method="get" action="">
-                            <input type="text" placeholder="用戶名稱" name="id">
-                            <input type="email" placeholder="電子郵件" name="mail">
-                            <input type="password" placeholder="密碼" name="pwd">
-                            <input type="password" placeholder="確認密碼" name="pwd">
-                            <input type="button" class="button_login submit" value="創建帳戶">
-                        </form>
-                    </div>
-                    <div class="signin">
-                        <h1>登入</h1>
-                        <form class="more-padding" autocomplete="off" method="get" action="">
-                            <input type="text" placeholder="用戶名稱" name="id">
-                            <input type="password" placeholder="密碼" name="pwd">
-                            <div class="checkbox">
-                                <input type="checkbox" id="remember" /><label for="remember">記住我</label>
-                            </div>
-                            <input type="button" class="button_login submit" value="登入">
-                        </form>
-                    </div>
-                </div>
-                <div class="leftbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc">pick your perfect <span>bouquet</span></p>
-                    <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg"
-                        alt="1357d638624297b" border="0">
-                    <p class="account">已經有帳號了嗎?</p>
-                    <input type="button" class="button_login" id="signin" value="登入">
-                </div>
-                <div class="rightbox">
-                    <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                    <p class="desc"> pick your perfect <span>bouquet</span></p>
-                    <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" />
-                    <p class="account">還沒有帳號嗎?</p>
-                    <input type="button" class="button_login" id="signup" value="註冊">
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/login.js"></script>
 
     <main>
         <div class="banner">
@@ -125,25 +43,25 @@
                     <p class="eng"> Tell a romantic story with a bunch of flower</p>
                 </div>
                 <div class="bannerbtn">
-                    <a class="btn-draw" href="product.html"><span>立即選購</span></a>
+                    <a class="btn-draw" href="product.jsp"><span>立即選購</span></a>
                 </div>
             </div>
         </div>
         <div class="allitem">
             <div class="sellitem1">
-                <a href="product.html#collapseOne"><img src="img/flower/pic01.jpg" class="sellpic"></a>
+                <a href="product.jsp#collapseOne"><img src="img/flower/pic01.jpg" class="sellpic"></a>
             </div>
             <div class="sname1">
                 <a>鮮花</a>
             </div>
             <div class="sellitem2">
-                <a href="product2.html"><img src="img/flower/pic02.jpg" class="sellpic"></a>
+                <a href="product2.jsp"><img src="img/flower/pic02.jpg" class="sellpic"></a>
             </div>
             <div class="sname2">
                 <a>永生花</a>
             </div>
             <div class="sellitem3">
-                <a href="product3.html"><img src="img/flower/pic03.jpg" class="sellpic"></a>
+                <a href="product3.jsp"><img src="img/flower/pic03.jpg" class="sellpic"></a>
                 <div class="sname3">
                     <a>多肉植物</a>
                 </div>
@@ -160,11 +78,11 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="product2.html#page1"><img src="img/indexAD/ad01.png" class="d-block w-100"></a>
+                        <a href="product2.jsp#page1"><img src="img/indexAD/ad01.png" class="d-block w-100"></a>
                         <div class="carousel-caption d-none d-md-block"></div>
                     </div>
                     <div class="carousel-item">
-                        <a href="product.html#page1"><img src="img/indexAD/ad02.png" class="d-block w-100"></a>
+                        <a href="product.jsp#page1"><img src="img/indexAD/ad02.png" class="d-block w-100"></a>
                         <div class="carousel-caption d-none d-md-block"></div>
                     </div>
                 </div>
@@ -186,7 +104,7 @@
             </div>
             <div class="bsitem">
                 <div class="bsitem1">
-                    <a href="hf-item2.html">
+                    <a href="hf-item2.jsp">
                         <div class="bsimg">
                             <img src="img/flower/R06.jpg">
                         </div>
@@ -201,7 +119,7 @@
                     </a>
                 </div>
                 <div class="bsitem2">
-                    <a href="hf-item.html">
+                    <a href="hf-item.jsp">
                         <div class="bsimg">
                             <img src="img/flower/C05.jpg">
                         </div>
@@ -216,7 +134,7 @@
                     </a>
                 </div>
                 <div class="bsitem3">
-                    <a href="hf-item3.html">
+                    <a href="hf-item3.jsp">
                         <div class="bsimg">
                             <img src="img/flower/S02.jpg">
                         </div>
@@ -238,6 +156,49 @@
         <div class="footerlogo">
             <img src="img/logo/logo.png" style="width: 150px;">
             <br>
+			<h3>
+            瀏覽人數：
+            <%
+
+try { // 例外處理
+    Class.forName("com.mysql.jdbc.Driver"); // 啟動 JDBC 驅動程式
+    try {	// 例外處理
+
+        if(con.isClosed()) // con.isClosed() 回傳 ture 代表連線關閉
+           out.println("警告：連線建立失敗！"); // 連線關閉代表連線沒有被建立
+        else { // 連線成功建立就可以開始取得與更新資料庫的資料
+				sql="use newschema"; // SQL 語法：使用 資料庫
+				con.createStatement().execute(sql); // 執行上一行的 SQL
+				sql="select * from `counter`"; // SQL 語法：取得 counter 資料表中的所有資料
+				ResultSet rs=con.createStatement().executeQuery(sql); // ResultSet 用來儲存查詢結果 (*註解1)，將上一行 SQL 執行後並儲存結果
+			while(rs.next()) // 一筆一筆讀取資料，回傳 false 表示讀取結束
+				{
+				Integer c= rs.getInt(2); // 取得資料表第一個欄位的資料到 c_S 這個字串中
+				// 將 c_S 這個字串轉成 int 整數並存至 c 變數
+				if (session.isNew()) { // 如果使用者是使用新的 Session 連入
+					c++; // c 變數 +1
+					out.print(c); // 印出 c 變數
+									}
+				else  // 如果使用者不是使用新的 Session 連入
+					{
+				out.print(c); // 直接印出 c 變數
+					} 
+			sql="update `counter` set `counter` ='" + c + "' where `idcounter` = '1'"; // SQL 語法：將 c 的數字更新到 counter 資料表中的 count 欄位
+				}
+			con.createStatement().execute(sql); // 執行剛剛的 SQL 語法
+			con.close(); // 關閉 MySQL 連線
+			}
+		}
+    catch (SQLException sExec) {
+           out.println("警告：MySQL 錯誤！"+sExec.toString()); // MySQL 錯誤警告
+    }
+}
+catch (ClassNotFoundException err) {
+   out.println("警告：class 錯誤！"+err.toString()); // JDBC 錯誤警告
+}
+%>
+            人
+        </h3><br>
             <h3 class="name">初栖 Seventh Day</h3>
             <br>
             copyright © 2023 All Seventh Day

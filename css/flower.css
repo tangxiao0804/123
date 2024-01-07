@@ -1,12 +1,7 @@
 main {
-    background: white !important;
+    background-color: white !important;
     height: 4300px;
-}
-
-.fcontainer {
-    position: relative;
-    top: 140px;
-    height: auto;
+    margin-top: 140px;
 }
 
 .flowerbanner {
@@ -42,7 +37,7 @@ main {
     position: relative;
     top: 10px;
     font-size: 50px !important;
-    color: rgb(94, 73, 61) !important;
+    color: rgb(94, 73, 61) !important;;
     text-align: center;
 }
 

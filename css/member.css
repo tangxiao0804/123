@@ -1,23 +1,21 @@
 main {
-    background: linear-gradient(180deg, #fff, #e6ded3);
+    background: linear-gradient(180deg, #fff, #e6ded3);    
     width: 100%;
     height: 1100px;
 }
 
-.containnav {
+.containnav{
     margin-top: 160px;
     display: flex;
     justify-content: center;
 }
 
-.my_icon,
-.history {
+.my_icon, .history {
     display: inline-block;
     margin-right: 20px;
 }
 
-#page1,
-#page2 {
+#page1, #page2 {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -164,30 +162,25 @@ a {
     border-radius: 0px;
 }
 
-.btn:hover {
-    background-color: #522c01bf;
-    color: #fff;
-}
-
-.list-item {
+.list-item{
     width: 100%;
     padding-top: 10px;
 }
 
-.list-item>div {
+.list-item > div {
     display: none;
 }
 
-input {
+input{
     width: 100px;
     color: black;
 }
 
-.tag {
+.tag{
     text-align: center;
-}
+}   
 
-.nt-value {
+.nt-value{
     color: black;
 }
 
@@ -195,7 +188,7 @@ input {
     content: "NT$";
 }
 
-table {
+table{
     margin: auto;
     text-align: center;
     justify-content: center;
@@ -205,7 +198,7 @@ table {
 }
 
 .check {
-    background-color: #522c0187 !important;
+    background-color: #522c0187;
     color: #fff;
 }
 
@@ -213,8 +206,7 @@ table {
     background-color: #522c01a4;
 }
 
-td,
-th {
+td,th{
     padding: 20px;
 }
 
@@ -260,12 +252,8 @@ th {
     border-top: 1px solid #dbdbdb;
 }
 
-input {
-    background: transparent !important;
-}
-
 .table-title {
-
+    background-color: #fafafa;
     border-bottom: 1px solid #dbdbdb;
     color: rgba(66, 66, 66, .6);
     padding: 10px 15px;
@@ -369,7 +357,6 @@ tbody {
     text-align: left !important;
 }
 
-
 .order-wrapper .account-outline:nth-last-child(2) {
     border-top-color: transparent;
 }
@@ -377,4 +364,10 @@ tbody {
 .none {
     text-align: center;
     color: #6a6a6a;
+}
+
+input:focus {   
+    border-bottom: 1.2px solid rgba(206, 125, 136, 0.7);
+    font-size: 1em;
+    transition: 0.8s all ease;
 }

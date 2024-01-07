@@ -193,8 +193,8 @@
   border-radius: 4px 0 0 4px;
 }
 
-.nt-value {
-  font-size: 40px;
+.nt-value{
+font-size: 40px;
 }
 
 .leftbox {
@@ -410,36 +410,37 @@
   object-fit: cover;
 }
 
-.octable {
-  align-items: center;
-  font-size: 1.25rem;
-  text-align: center;
-  width: 100%;
-  column-gap: 5px;
+.octable{
+align-items: center;
+font-size: 1.25rem;
+text-align: center;
+width: 100%;
+column-gap: 5px;
 }
 
-.commenttype {
-  margin-bottom: 20px;
+.commenttype{
+margin-bottom: 20px;
 }
 
 .octable thead {
-  border-bottom: 1px solid #ddd;
-  border-spacing: 2px;
+border-bottom: 1px solid #ddd;
+border-spacing: 2px;
 }
 
-.tcomment tr {
-  border-bottom: 1px solid #ddd;
-  border-spacing: 2px;
+.tcomment tr{
+border-bottom: 1px solid #ddd;
+border-spacing: 2px;
 }
 
-.octable td {
-  padding: 10px;
+.octable td{
+padding: 10px;
 }
 
 .othercomment {
-  margin-top: 20px;
+margin-top: 20px;
 }
 
 .describe {
   font-family: 'Times New Roman';
 }
+

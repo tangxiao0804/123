@@ -9,12 +9,10 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     height: 100%;
-
 }
 
 main {
@@ -22,16 +20,14 @@ main {
     height: 1600px;
     background: linear-gradient(180deg, #e6ded3, #fbf7f1d2, #e6ded3);
     margin-top: 130px;
-
 }
 
 .contact {
+    width: auto;
     position: relative;
     top: 50px;
-    display: flex;
     margin-bottom: 20px;
     margin-left: 150px;
-    justify-content: space-around;
     display: flex;
     text-align: center;
 }
@@ -48,11 +44,13 @@ main {
 
 .usright {
     position: relative;
-    left: -250px;
+    left: 15rem;
 }
 
 .map {
     display: grid;
+    position: relative;
+    left: 10rem;
 }
 
 .loc,
@@ -73,10 +71,7 @@ i {
     outline: none;
     padding: 2px 6px;
     width: 90%;
-    background-color: #fff;
 }
-
-
 
 .tellus {
     font-size: 24px;
@@ -92,6 +87,7 @@ i {
 .ccontent {
     border: 1px solid #fff;
     font-size: 16px;
+    color: black;
     resize: none;
     width: 400px;
     height: 140px;
@@ -113,7 +109,6 @@ i {
     display: flex;
     flex-wrap: wrap;
     width: 1400px;
-
 }
 
 .card {
@@ -121,7 +116,7 @@ i {
     width: 400px;
     height: 410px;
     margin: 20px;
-    background-color: #b8ab97;
+    background-color: #ffdfab;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -186,7 +181,6 @@ i {
     margin-bottom: 20px;
     padding-bottom: 20px;
     font-weight: bold;
-
 }
 
 .card p {
@@ -198,12 +192,10 @@ i {
     line-height: 30px;
 }
 
-
-
-
 iframe {
     text-align: center;
 }
+
 
 h3 {
     margin-top: 0;
@@ -215,4 +207,35 @@ h3 {
 
 .clearfix {
     clear: both;
+}
+
+@media screen and (max-width: 400px) {
+
+    main {
+        width: 400%;
+    }
+
+    .head3 {
+        position: relative;
+        right: -15%;
+    }
+
+    footer {
+        width: 400%;
+    }
+
+    .map {
+        position: relative;
+        left: -3%;
+    }
+
+    .people {
+        position: relative;
+        left: -12%;
+    }
+
+    .usright {
+        position: relative;
+        left: 5%;
+    }
 }
