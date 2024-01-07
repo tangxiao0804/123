@@ -36,15 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (linkText === "新品") {
-                targetPageNumber = 4;
+                targetPageNumber = 1;
             }
 
             if (linkText === "花束") {
-                targetPageNumber = 5;
+                targetPageNumber = 2;
             }
 
             if (linkText === "玻璃罩") {
-                targetPageNumber = 6;
+                targetPageNumber = 3;
             }
 
             showPage(targetPageNumber);
@@ -63,6 +63,21 @@ $(document).ready(function () {
         $(targetPanel).collapse('toggle');
     });
 });
+
+function redirectToOtherPage(num) {
+    if (num == 1) {
+        window.location.assign("product.html#collapseOne");
+    }
+
+    if (num == 2) {
+        window.location.assign("product2.html#collapseTwo");
+    }
+
+    if (num == 3) {
+        window.location.assign("product3.html");
+    }
+
+}
 
 
 
